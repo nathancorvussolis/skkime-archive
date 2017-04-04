@@ -1,0 +1,3280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<meta http-equiv="Content-Type" content="text/html; charset="iso-2022-jp">
+<head>
+		<title>skkime's page</title>
+		<style type="text/css"> 
+		.bg { background-color:#d8e4fa; padding:0px; margin:0px; }
+	.subbg { background-color:#d8e4da; padding:0px; margin:0px; }
+	 </style>
+</head>
+<body>
+<div>
+<h1>skkime's page</h1>
+<h2 class="bg">&nbsp;[最新情報]&nbsp;</h2>
+        <p><b>[2010/07/19]</b></p>
+        <p>skkime1.5のsnap20100719を置きました。snap20100130からの変更点は以下の通りです。</p>
+        <ul>
+          <li>[tsf] Compartment が機能しなくなっているバグを修正しました。(takayama tomoyaさん、patch有り難うございました)</li>
+          <li>[ime,tsf] 送り仮名に続くアルファベットを小文字として解釈していた部分を変換ルールを見て大文字を渡すかどうか判定するように修正しました。</li>
+        </ul>
+        <p><b>[2010/05/01]</b></p>
+        <p>skkime1.5のsnap20100130を置きました。snap20091101からの変更点は以下の通りです。</p>
+        <ul>
+          <li>[tsf] 言語バーの表示が変換モードに追従しないバグを修正しました。</li>
+          <li>[ime,tsf] ソート済み辞書をロックしないように変更しました。</li>
+          <li>[tsf] Toggle-IME が動作するように変更しました。また、IME を on/off にするだけの機能を追加しました。</li>
+        </ul>
+        <p>バグレポートのが遅くなりまして、申し訳ありませんでした。</p>
+		<p><b>[2009/11/04]</b></p>
+		<p>skkime1.5のsnap20091101を置きました。snap20090715からの変更点は以下の通りです。</p>
+		<ul>
+		<li>[tsf] Vista, Windows7 において Imm Interface で制御できるように修正しました。</li>
+		<li>[ime,tsf] 確定で kana-prefix が消えるように修正しました。</li>
+		</ul>
+		<p><b>[2009/07/21]</b></p>
+		<p>skkime1.5のsnap20090715を置きました。snap20090704からの変更点は以下の通りです。</p>
+		<ul>
+		<li>SKK-JISYO.assocの「A:」のようにAnnotationに"["や"]"が含まれている時、ユーザ辞書への登録がおかしくなるバグを修正しました。(palellamaさん、バグレポートありがとうございます)</li>
+		<li>[tsf] IMEを開いた時に「かな」モードに戻す、が正しく機能していなかったので修正しました。</li>
+		<li>[ime,tsf] Annotation が lisp 式だった場合の表示が狂っていたので修正しました。</li>
+		</ul>
+		<p><b>[2009/07/05]</b></p>
+		<p>skkime1.5のsnap20090704を置きました。snap20090628からの変更点は以下の通りです。</p>
+		<ul>
+		<li>[skkiserv] JISX0213-2004 の第一面の変換テーブルに"Ｑ"とあるべきところが"Ｐ"が入っているバグがありましたので、修正しました。(palellamaさん、バグレポートありがとうございます)</li>
+		<li>[skkiserv] ソート済み辞書の ";; okuri-ari entries." や ";; okuri-nasi entries." の直後のエントリが検索されないバグを修正しました。</li>
+		</ul>
+		<p><b>[2009/06/29]</b></p>
+		<p>skkime1.5のsnap20090628を置きました。snap20090618からの変更点は以下の通りです。</p>
+		<ul>
+		<li>[ime] 候補リストで2文字以上の候補が先頭1文字しか表示されないバグの修正しました。</li>
+		<li>[tsf] Windows の update 状況によって、改行が2重に入るバグを修正しました。</li>
+		<li>[tsf] 句読点の入力でゴミが入るバグを修正しました。</li>
+		<li>[skkiserv] ソート済み辞書で最後のエントリ(例えば、ワ行)を検索すると落ちるバグを修正しました。(palellamaさん、バグレポートありがとうございます)</li>
+		<li>[skimconf] Minibufferフォントの設定を可能にしました。</li>
+		</ul>
+		<p>先日の Messenger で不用意な改行が入る問題は、上のバグのせいかもしれません。Text Service Frameworkサイドのアップデートと関係があるようです。</p>
+		<p><b>[2009/06/21]</b></p>
+		<p>skkime1.5のsnap20090618を置きました。snap20090423からの変更点は以下の通りです。</p>
+		<ul>
+		<li>[skkiserv] henkan-okuri-strictly の動作を正す patch を Hiro Aida さんから頂きましたので、patch をあてました。(Hiro Aidaさん、patchありがとうございました)</li>
+		<li>[tsf, ime] JIS0213-2004 に対応しました。これに伴い ISO-2022-JP-4, EUCJP-2004 に対応しました。しかし、SHIFTJIS2004 にはまだ対応していません…。(palellamaさん、レポートありがとうございます)</li>
+		<li>[tsf] Windows Mailer/Outlook Expressで kana-prefix の途中から space を押すと kana-prefix が残るバグを修正しました。</li>
+		<li>[tsf, ime] 変換候補表示、ミニバッファ表示のフォントを Windows の Message Font にあわせました。また、レジストリ (ColorFace の下に DefaultFont, DefaultFontSize を作り指定する)
+		によって変更できるようにしました。</li>
+		<li>[tsf, ime, skimconf] ローマ字かなルールにエラーがあった場合、エラー箇所だけを読み飛ばすようにしました。また、エラー箇所を表示するようにしました(skimconf)。(Hidetoshi MIZUMOさん、バグレポートありがとうございます)</li>
+		<li>[skimconf] 全角ベクトルを設定すると落ちるバグを修正しました。(Matsuiさん、バグレポートありがとうございます)</li>
+		<li>[skimconf] 全角ベクトル、ローマ字かなルールにおいて default にしてから変更を押すと、default のルールをもとに dialog を開くように変更しました。リセットが簡単に行えるように、です。
+		この時、ok を押すと customize された項目が消えてしまうので注意して下さい。</li>
+		<li>[tsf, ime, skimconf] Default のローマ字かなルールに "mm" のエントリが欠けていたので、追加しました。</li>
+		</ul>
+		<p>直接コード入力で Unicode 2-16面を指定すること、JISX0213-2004 のコードを指定すること、EUCJP-2004 を指定することが、まだ出来ません。修正予定です。</p>
+		<p>変換途中で改行が入ってしまうバグなのですが、egglike-newline の true/false の判定が狂っていたので、前回か前々回のタイミングで判定を入れ替えた記憶があります。
+		何のレポートもなく入れ替えてしまい、申し訳ありませんでした。再度、egglike-newline の設定を確認して頂けないでしょうか。</p>
+		<p>フォント名の指定は、HKEY_CURRENT_USER\Software\TT\Windows\CurrentVersion\SKKIME\1.5\ColorFace\DefaultFont で REG_SZ, フォントサイズの指定は
+		HKEY_CURRENT_USER\Software\TT\Windows\CurrentVersion\SKKIME\1.5\ColorFace\DefaultFontSize で REG_DWORD です。</p>
+		<p><b>[2009/04/25]</b></p>
+		<p>skkime1.5のsnap20090423を置きました。snap20090118からの変更点は以下の通りです。</p>
+		<ul>
+		<li>[tsf, ime] 英語版 Windows にインストールした場合にかな漢字変換に失敗するバグを修正しました。</li>
+		<li>[tsf, ime] X-Mouse との相性問題に対処しました (WindowsXP) (Windows2000 にはまだ問題が残っているかもしれません) (Satoshi Fukutomiさん、SAITO Shukakuさん、バグレポートありがとうございます)</li>
+		<li>[tsf] フォーカスが外れた時の動作を ime 側と合わせました。(不具合があるかもしれません、テスト中です)</li>
+		</ul>
+		<p><b>[2009/02/04]</b></p>
+		<p>skkime1.5のsnap20090118を置きました。snap20081107からの変更点は以下の通りです。</p>
+		<ul>
+		<li>[tsf, ime] 注釈テキストの処理でHeapを破壊していたバグを修正しました。(Tamoさん、バグレポートありがとうございます。恐らくはこれが原因でクラッシュしていたものと推測しています)</li>
+		<li>[tsf, ime] 送り仮名変換から keyboard-quitした後、▽マークを消さずに送りなし変換を行うと変換ミスするバグを修正しました。</li>
+		<li>[ime] 入力中のテキスト表示位置を調整しました。(MyF Mastersの名前入力で入力中のテキストが見えなかったため)</li>
+		</ul>
+		<p><b>[2008/12/16]</b></p>
+		<p>skkime1.5のsnap20081107を置きました。<s>snap20081107</s>snap20080721からの変更点は以下の通りです。</p>
+		<ul>
+		<li>[tsf] キーマップの設定をレジストリから反映していないバグを修正しました。</li>
+		<li>[tsf] 候補ウィンドウが他のウィンドウの裏に隠れてしまうことがあるバグに対処コードを用意しました。(IWAMURO Motonoriさん、バグレポートありがとうございました)</li>
+		<li>[tsf, ime] 句読点の設定を行うとダイアログが落ちるバグを修正しました。</li>
+		<li>[tsf, ime] 句読点の設定がレジストリを読んで反映されないバグを修正しました。(Keisuke URAGOさん、バグレポートありがとうございました)</li>
+		</ul>
+		<p>Opera Browserの件はIMMの呼び出しが特殊なようです。特定の操作が呼ばれていないように観測されるため、対処は困難です。</p>
+		<p><b>[2008/07/21]</b></p>
+		<p>skkime1.5 の snap20080721 を置きました。snap20080708 からの変更点は以下の通りです。</p>
+		<ul>
+		<li>[tsf, ime] 数値変換が disable できないバグを修正しました。</li>
+		<li>[tsf, ime] skk-process-okuri-early が動作しないバグを修正しました。</li>
+		<li>[tsf, ime] skk-delete-okuri-when-quit が動作していなかったバグを修正しました。</li>
+		</ul>
+		<p>(Takuya Yamabeさん、バグレポートありがとうございました)</p>
+		<ul>
+		<li>[ime] Windows2000 でメニューによる入力モードの切り替えがきちんと動作していなかったバグを修正しました。</li>
+		</ul>
+		<p>skk-henkan-strict-okuri-precedence 及び skk-henkan-okuri-strictly の動作については確認中です。</p>
+		<p><b>[2008/07/09]</b></p>
+		<p>skkime1.5 の snap20080708 を置きました。snap20080108 からの変更点は以下の通りです。</p>
+		<ul>
+	    <li>[tsf, ime] 句読点のトグルが機能しないバグを修正しました。(Keisuke URAGOさん、Kuroishi Mitsuoさん、レポートありがとうございます)</li>
+	    <li>[tsf, ime] 数値変換で「9」が落ちてしまうバグを修正しました。(Syoryo KANEKOさん、t-ishiiさん、レポートありがとうございます)</li>
+	    <li>[tsf, ime] SetCompositionString を使用するとアプリケーション落ちるバグを修正しました。</li>
+	    <li>[ime] 文節の設定を MS-IME にあわせました。</li>
+	    <li>[ime] 言語バーの操作にアイコンを追加・削除するタイミングを修正しました。</li>
+	    <li>[tsf] WindowsVista で SubstituteLayout の登録をしないように修正しました。</li>
+	    </ul>
+		<p><b>[2008/02/04]</b></p>
+		<p>skkime1.5 の snap20080130 を置きました。snap20080108 からの変更点は以下の通りです。</p>
+		<ul>
+	    <li>[ime] 候補表示窓のサイズ計算でメモリを破壊していたバグを修正しました。</li>
+	    <li>[tsf, ime] 色設定が反映されないバグを修正しました。(Hisato Eguchiさん、バグレポートありがとうございました)</li>
+	    <li>[tsf] 仮名モードで Control キーと a を交互に押していると、「あ」が入力されなくなるバグを修正しました。</li>
+	    <li>[tsf] 操作が重い時に Control が入らないバグを修正しました。</li>
+	    <li>[ime, tsf] JISX0201-KATAKANA 変換で誤変換される(例.「テ」が「デ」になる)バグを修正しました。(john mycleさん、バグレポートありがとうございました)</li>
+	    </ul>
+		<p><b>[2008/01/10]</b></p>
+		<p>skkime1.5 の snap20080130 を置きました。snap20080108 からの変更点は以下の通りです。</p>
+		<ul>
+		<li>[ime] 候補表示の処理でメモリを破壊しているバグを修正しました。</li>
+		<li>[tsf] Shift や Control の押下状態の判定に GetAsyncKeyState ではなく GetKeyState を利用するように直しました。</li>
+		<li>[ime, tsf] 色設定で文字色、背景色、下線タイプ、下線色を変更しても反映されないバグを修正しました。(Hisato Eguchiさん、バグレポートありがとうございました)</li>
+		<li>[ime, tsf] JISX0201-KATAKANA 変換で誤変換される(例.「テ」が「デ」になる)バグを修正しました。(john mycleさん、バグレポートありがとうございました)</li>
+		</ul>
+		<p>skkime1.5 の snap20080108 を置きました。snap20071119 からの変更点は以下の通りです。</p>
+		<ul>
+		<li>skkiserv.exe にソート済み辞書を読み込ませた時、「okuri-ari entries」に記号が含まれていると候補の検索がおかしくなるバグを修正しました。</li>
+		<li>ローマ字仮名ルールにマクロが設定できないバグを修正しました。</li>
+		<li>数字を含む文字列を検索する際に「数値変換」と「そのままの文字列の変換」を同時に行うようにしました。</li>
+		<li>ローマ字仮名ルールに特殊記号(任意の1文字\?、母音\V、子音\C)を追加しました(今迄のルールは一度標準に戻してリセットする必要があります)。
+		また出力側にはその時に入力された文字を意味する特殊記号(\I)を追加しました。優先順位は「普通の記号」＞「母音」「子音」＞「任意の1文字」です。
+		これにより、例えば、現状態``r\?''から次状態``\I''、出力文字列を``ー'' とすると、``rk'' と入力した場合現状態 ``k''、出力 ``ー''のようになります。</li>
+		<li>ローマ字仮名ルール木を複数(4つ)用意して、その切り替え動作で oh変換のルールを吸収させました。どの木にいるかによって、o を押された直後の prefix 空なのか、そうでないのかを区別しています。</li>
+		<li>Jisx0201-Katakana/Roman モードを追加しました。</li>
+		<li>Windows2000 で IME メニューが化けているバグを修正しました。</li>
+		<li>Windows2000 でレジストリからの設定読み込み中にエラーが発生して、設定が反映されないバグを修正しました。</li>
+		<li>UISTATE ないし言語バーから入力モードを切り替える操作が正しく動いていないバグを修正しました。</li>
+		<li>WindowsVista 64bit edition の installer package を作成しました。</li>
+		</ul>
+		<p><b>[2007/11/20]</b></p>
+		<p>skkime1.5 の snap20071119 を置きました。snap20070822 からの変更点は以下の通りです。</p>
+		<ul>
+		<li>ローマ字かなルールを変更しても反映されないバグを修正しました。(Kenji Yamashitaさん、バグレポートありがとうございました)</li>
+		<li>skk-today が動作するようにしました。ただし、この <a href="arc/skkime/init.el">init.el</a> を Application Data のユーザー辞書と同じフォルダに配置する必要があります。</li>
+		<li>#4変換が動作すると、他の候補が表示されなくなってしまうバグを修正しました。</li>
+		<li>#4変換の候補が候補一覧表示で#4としか表示されるところを変換結果が表示されるように修正しました。</li>
+		<li>Vista 用に installer を作成しました。</li>
+		<li>設定ツールでサーバー辞書の編集をすると落ちるバグを修正しました。</li>
+		<li>設定ツールでローマ字かなルールを変更or追加した時に「片仮名」と「平仮名」の表示が逆に出るバグを修正しました。</li>
+		<li>平仮名リージョンや片仮名リージョンを行った後に keyboard-quit でキャンセルするとカーソル位置がおかしくなるバグを修正しました。</li>
+		<li>[TSF] oh 変換が動作するように修正しました。今、hh の遷移が入っていませんので、oh を切った場合には hh から h の遷移を追加するのが良いでしょう。</li>
+		<li>[TSF] フォーカスを移動させた時に仮名プレフィクスが残っていると、フォーカスを戻した時に仮名プレフィクスは消去されているように見えて影響が残っているバグを修正しました。</li>
+		<li>[TSF] レジストリから設定を読み込むタイミングが甘く、全く設定が無い状態で一切の仮名入力ができなくなるバグを修正しました。</li>
+		<li>[TSF] レジストリに一切設定情報が無い時に初期設定データを読み込めないバグを修正しました。</li>
+		<li>Vista の logoff 時に辞書のセーブが行われるように(30秒以内に完了しないと辞書が壊れる可能性があります…)修正しました。</li>
+		</ul>
+		<p><b>[2007/08/22]</b></p>
+		<p>skkime1.5 の snap20070822 を置きました。snap20070728 からの変更点は以下の bugfix です。</p>
+		<ul>
+		<li> Minibuffer Window を開く・閉じるを繰り返すとアプリケーションが落ちる、ないしは、文字入力が不可能になるバグ </li>
+		<li> 候補窓の Default 表示でアクセス違反が発生しているバグ</li>
+		<li> 直接コード入力の2段目のメニューで選択した候補がずれるバグ</li>
+		<li> バッファの初期化時に prefix-len を初期化していないためにキーを処理するかどうかの判定部分で落ちるバグ</li>
+		<li> バッファを解放せずに溢れさせるバグ及び解放したとして HeapFree を行っていないバグ</li>
+		</ul>
+		<p><b>[2007/07/28]</b></p>
+		<p>snap20070728 を置きました。snap20070620 からの変更点は、</p>
+		<ul>
+		<li>Default の候補窓の表示位置を調整しました。</li>
+		<li>[tsf] Microsoft Word で Font Style を忘れる現象を緩和する(予定)のコードを追加しました。(Mitsuru Oka さん、バグレポートありがとうございます)</li>
+		<li>[tsf] IME を閉じた時に編集中のテキストが残るバグを修正しました。</li>
+		</ul>
+		<p>skkime1.5 側の修正は、</p>
+		<ul>
+		<li>Default の候補窓の表示位置を調整しました。</li>
+		<li>候補一覧表示状態から x で抜けた時に現在の候補が Composition String に入らないバグを修正しました。</li>
+		<li>特殊キーのキー割り当てが行えるようにしました(Left Arrow, Right Arrow など)。この影響で keymap が以前と互換性がなくなっています。Custom にしていた場合は一度標準に戻してから再度設定し直して下さい。</li>
+		<li>HasSu (はっ*す) のような変換に失敗するバグを修正しました。</li>
+		<li>言語バーのボタンの CLSID が正しくない ID だったので修正しました。</li>
+		<li>[tsf] Microsoft Word で Font Style を忘れる現象を緩和する(予定)のコードを追加しました。(Mitsuru Oka さん、バグレポートありがとうございます)</li>
+		<li>[tsf] IME を閉じた時に編集中のテキストが残るバグを修正しました。</li>
+		</ul>
+		<p>また msvcr の version を意識して、vc6/vs2003/vs2005 の build binary を用意するようにしました。(KIRIHARA Masaharu さん、レポートありがとうございました)</p>
+		<p><b>[2007/06/21]</b></p>
+		<p>snap20070620 を置きました。snap20070611 からの変更点は、</p>
+		<ul>
+		<li>候補表示窓の表示位置を MS-IME の動作にあわせて調整しました。(yaskeさん、バグレポートありがとうございます)</li>
+		<li>「skimconf.exe で設定を変更して OK や適用のボタンを押したのに全然設定が反映されないバグの修正」と書きながら、修正されていなかったのを直しました。</li>
+		<li>lisp 評価のコード無し build した skkiserv.exe を置いていたのを lisp 評価する build に直しました。</li>
+		</ul>
+		<p>skkime1.5 側も上記修正を適用しました。</p>
+		<p><b>[2007/06/12]</b></p>
+		<p>snap20070611 を置きました。snap20070426 からの変更点は、</p>
+		<ul>
+		<li> skimconf.exe で設定を変更して、OK や適用のボタンを押したのに全然設定が反映されないバグの修正、</li>
+		<li> skkime を利用していると Application の終了に時間がかかるバグの修正、</li>
+		<li> skkiserv.exe が特定の操作で落ちてしまうバグを修正 (lisp 評価時に num-list がないと未初期化の変数を操作して例外で落ちる)、</li>
+		<li> WindowsVista 対応のためのコードの追加、修正(ただし、インストーラがまだ用意できていないです)、</li>
+		</ul>
+		<p>です。</p>
+		<p><b>[2007/04/26]</b></p>
+		<p>snap20070426 を置きました。snap20070409 からの変更点は、</p>
+		<ul>
+		<li>Text Service Framework が有効になっている時、Application の終了に時間がかかる問題を修正しました。</li>
+		</ul>
+		<p>上記問題は 1.5 にも共通です。</p>
+		<p><b>[2007/04/09]</b></p>
+		<p>snap20070409 を置きました。snap20070407 からの変更点は、</p>
+		<ul>
+		<li>[TSF] _Uninit 時に _CloseUIElements の呼び出しを追加しました。</li>
+		<li>[TSF] 何もテキストを入れていない状態での直接コード入力を行うと(やはり)ミニバッファウィンドウが変な位置に出るため、ミニバッファウィンドウの位置の算出方法を変更しました。</li>
+		</ul>
+		<p>上記問題は 1.5 にも共通です。</p>
+		<p><b>[2007/04/09]</b></p>
+		<p>snap20070407 を置きました。snap20061112 からの変更点は、</p>
+		<ul>
+		<li>Annotation の表示、メッセージ表示を ToolTip に変更しました。</li>
+		<li>Minibuffer Text の扱いを候補一覧扱いに変更しました。</li>
+		<li>マルチスクリーンで候補一覧の表示位置がおかしくなるバグを修正しました。(J.Sokodaさん、バグレポートありがとうございます)</li>
+		<li>設定ダイアログを外部EXEに切り出しました。(Vista対応の準備です)</li>
+		<li>[TSF] 候補一覧の表示位置を入力文字の位置の直下に変更しました。</li>
+		<li> WindowsSDK 6.0 で build しているために (WindowsXP binary)、MSVCR80 が必要です。Vista で追加された Text Service Framework の機能に対応するために WindowsSDK6.0 が必要になりました。</li>
+		</ul>
+		<p> skkime1.5(snap20070407) を置きました。こちらは base が skk10.62a のものですが、まだ一通りの機能が揃っているかどうか確認の段階です。(設定メニューの項目が全て動作しているか、など)</p>
+		<p><b>[2006/11/12]</b></p>
+		<p>snap20061112 を置きました。snap20061015 からの変更点は、</p>
+		<ul>
+		<li>候補一覧表示になるまでの注釈が表示されないバグを修正しました。(regmog9 さん、バグレポートありがとうございました)</li>
+		<li>Minibuffer で編集中に Message が表示されると編集中のテキストが見えなくなるので、先頭に「！」を表示するだけに留めるようにしました。</li>
+		</ul>
+		<p><b>[2006/10/15]</b></p>
+		<p>snap20061015 を置きました。snap20060706 からの変更点は、</p>
+		<ul>
+		<li>1ヶ月程様子を見ていたのですが問題なさそうですので、``IwakU'' の入力で ``IwaKu'' と同じ動作をするコードを確定しました。</li>
+		<li>Microsoft OneNote 2003 が異常終了してしまうバグに対処しました。(Mitsuru Okaさん、バグレポートありがとうございました)</li>
+		</ul>
+		<p><b>[2006/09/12]</b></p>
+		<p>snap20060706 の Windows2000 binary を置き直しました。変更点は </p>
+		<ul>
+		<li>inf の中に skimic.dll を regsvr32 する部分が抜けていたので追加しました。(phrolear さん、バグレポートありがとうございました)(</li>
+		</ul>
+		<p>Windows2000 と OfficeXP 以降の組み合わせで何らかの問題が発生していたとすれば、もしかするとこの inf の記述忘れが原因だったかもしれません。</p>
+		<p>IwakU で IwaKu と同等の働きをさせる方法については悩み中です。時間がかかっていて、すみません。(oishiさん、リクエストありがとうございます。…まだ解決できていないです)</p>
+		<p>単純にベースとなる skk のバージョンを上げれば何とかなると考えていたのですが…</p>
+		<p></p>
+		<p><b>[2006/07/06]</b></p>
+		<p>snap20060706 を置きました。snap20060216 からの変更は次の通りです。</p>
+		<ul>
+		<li>候補一覧表示モードで残り候補が1または2の時に次候補リストを出そうとすると、ミニバッファの単語登録モードに落ちてしまうバグを修正しました。(sabimaru さん、バグレポートありがとうございました)</li>
+		</ul>
+		<p><b>[2006/02/27]</b></p>
+		<p>snap20060216 を置きました。snap20060125 からの変更は次の通りです。</p>
+		<ul>
+		<li>[tsf] Microsoft Excel2003 及び Microsoft PowerPoint 2003 と xkeymacs を組み合わせた時に C-xC-s のような 2 ストロークキーが正しく取り扱えない問題を解決しました。(oishi さん、バグの再現情報ありがとうございました)</li>
+		<li>delete-backward-char の動作を skk10.x 互換にしました。具体的には「送り仮名変換」の際に「送り仮名を全て delete すると確定する」です。</li>
+		<li>言語バーの icon のロードを LR_SHARED 付きで行うように修正しました。また snap20060125 の tsf の仮対処は破棄しました。</li>
+		</ul>
+		<p><b>[2006/01/26]</b></p>
+		<p>snap20060125 を置きました。snap20051114 からの変更は次の通りです。</p>
+		<ul>
+		<li>MS Money にて日本語入力を行うと MS Money が落ちてしまうバグの修正を行いました。また、MS Money にて日本語入力を行うとカーソルが左端に移動して入力した文字の後に移動しないバグを修正しました。(Taisuke Shimamoto さん、バグレポート有り難うございました)</li>
+		<li>rom-kana-rule-list の現状態に ``nn'' と ``nN'' のようなケースの違う文字を与えることができないバグを修正しました。(oishi さん、バグレポートありがとうございました)</li>
+		<li>Visual Studio 2005 などで利用していると Cicero Window が消えてしまう症状を緩和しました。(TSF)</li>
+		<li>IME が disable の場合に「入力方式」のアイコンが disable になるように修正しました。(TSF)</li>
+		<li>アスキー入力の時に DEL+CONTROL のキーが入らないバグを修正しました。</li>
+		<li>Status Window の位置がアプリケーションで共有されるように修正しました。(TSF を利用しない場合)</li>
+		</ul>
+		<p>「NONNda」と入力して「呑んだ」と入力するには、rom-kana-rule-list に、現状態``nN''、次状態空、平仮名出力``ん''、片仮名出力``ン'' と設定します。これで「▽の*んn」となることを防ぐことができるようになります。</p>
+		<p>xkeymacs や AltIME、窓使いの憂鬱と組み合わせて利用した時に生じる不具合、</p>
+		<ul>
+		<li>Office Application で C-x C-sなどの2ストロークでの入力が上手く行えないバグ (yok2000さん、バグレポートありがとうございます)、</li>
+		<li>WORD でのステータス表示についてWORD で文書を編集する際に、タスクバーに収めた「あ」の表示部分が、IME の ON/OFF と連動しません。</li>
+		<li>Excle でもAltキーの扱いについて Excel で、図形を扱う際に、Alt + R を使用するのですが、反応しません。(T.Fukagawa さん、バグレポートありがとうございます)</li>
+		</ul>
+		<p>これらについては引き続き調査中です。これらのツールに慣れていないために、再現する環境を構築できないままになっています。m(_ _)m</p>
+		<p><b>[2005/11/14]</b></p>
+		<p>snap20051114 を置きました。snap20051008 からの変更は次の通りです。</p>
+		<ul>
+		<li>かなモード時、かなprefixが残っている場合には Composition を閉じない修正を 2005/10/08 version で追加したのですが、「お」の扱いに問題が発生したために Composition String の有無のみ利用するように戻しました。
+		(NAKAMURA Toshikazu さん、Hisato Eguchi さん、バグレポートありがとうございます。原因は恐らくこれです。)</li>
+		<li>詳細なテキストサービスがオフになっている場合に従来の Status Window を表示するようにしました。</li>
+		<li>従来の Status Window の表示非表示の切り替えを ImeActiveContext から WM_SETFOCUS, WM_KILLFOCUS に移動させました。</li>
+		<li>Guide Window の表示を moveDefault だけに戻しました。</li>
+		</ul>
+		<p><b>[2005/10/08]</b></p>
+		<p>snap20051008 を置きました。snap20051001 からの変更は次の通りです。</p>
+		<ul>
+			<li> Windows2000 で Status Window を右／左クリックしてのメニューが表示されないバグを修正しました。(NAKAMURA Toshikazu さん、バグレポートありがとうございます)</li>
+			<li> Status Window を左クリックしてのメニューを右クリックして解除した時に、再度左クリックを押しても無反応になるバグを修正しました。</li>
+		</ul>
+		<p><b>[2005/10/01]</b></p>
+		<p>snap20051001 を置きました。snap20050831 からの変更は次の通りです。</p>
+		<ul>
+			<li>
+			直接コード入力のメニューで j-previous-candidate にバインドされたキーが有効で無かったバグを修正しました。(homutan 
+			さん、バグレポートありがとうございます)</li>
+			<li>
+			j-prefix-list の読み込み上限を緩和しました。(Kay-ara-ARAKAWA さん、レポートありがとうございます)</li>
+			<li>
+			[TSF]office などの application 
+			で、カタカナモードで「puroguramu」と入力すると「プロぐらむ」と入力されるバグを修正しました。(Hiroto Kagotani 
+			さん、バグレポートありがとうございます)</li>
+			<li>
+			j-prefix-list の設定メニューで DELETE が無効(listview に影響しない)になっているバグを修正しました。</li>
+			<li>
+				MFT_STRING の設定が残っていたので、MIID_STRING に修正しました。</li>
+		</ul>
+		<p><b>[2005/08/31]</b></p>
+		<p>snap20050831 を置きました。snap20050813 からの変更は次の通りです。</p>
+		<ul>
+			<li>
+			WindowsXP 版の inf ファイルに 64bit 環境で 32bit binary の skimic.dll 
+			を登録する処理が抜けていたので追加しました。(Kazutaka Doi さん、レポート、ありがとうございました)</li>
+			<li>
+			[TSF] Status Window の位置が変な場所(TaskBarの上あたり)に出るバグを修正しました。</li>
+			<li>
+				[TSF] LanguageBar に Btn を追加する位置を OpenStatusWindow に移動しました。</li>
+		</ul>
+		<p><b>[2005/08/14]</b></p>
+		<p>snap20050813 を置きました。snap20050526 からの変更は次の通りです。</p>
+		<ul>
+			<li>
+			WindowsXP 64bit edition に対応しました。</li>
+			<li>
+			guide window の mouse 処理 (cursor 位置の変更、選択領域の切り取りなど)が動作していなったバグを修正しました。</li>
+			<li>
+			ローマ字仮名ルールリストの上限が 256 だったのを 8192 に拡張しました。(Norihiro Muramotoさん、レポートありがとうございました)</li>
+			<li>
+			LangBarItem の AddItem 位置を修正しました。</li>
+			<li>
+			ユーザ辞書のセーブをキー操作又はプロパティダイアログのボタン操作から行えるようにしました。(ld50さん、レポートありがとうございました)</li>
+			<li>
+			候補リストの注釈が表示されない (tooltip が出ない) バグを修正しました。</li>
+			<li>
+				[TSF] status window の表示位置が composition 位置のすぐ下になるよう修正しました。</li>
+		</ul>
+		<p>
+			Annotation 抜きの (区切り文字の ; を区切り文字として扱わない) 登録の操作についてはどのような形が良いのか思案中です。</p>
+		<p><b>[2005/05/26]</b></p>
+		<p>snap20050526 を置きました。snap20050512 からの変更は次の通りです。</p>
+		<ul>
+			<li>
+			annotation を表示する設定にしていた時、annotation window を mouse で click すると application が 
+			hangup するバグを修正しました。 (Tsuyoshi Kitamoto さん、バグレポートありがとうございました)</li>
+			<li>
+				skkiserv.exe の process の current directory を Windows Directory に変更しました。 (ABE 
+				Yasushi さん、バグレポートありがとうございました)</li>
+		</ul>
+		<p><b>[2005/05/12]</b></p>
+		<p>snap20050512 を置きました。snap20050329 からの変更は次の通りです。</p>
+		<ul>
+			<li>
+			java5 で Swing アプリケーションを実行すると、java.exe が終了時にハングアップするバグの修正。 (ABE Yasushi 
+			さん、バグレポートありがとうございました)</li>
+			<li>
+				java5 で Swing アプリケーションを実行した場合、候補窓の位置がずれるバグの修正。</li>
+		</ul>
+		<p><b>[2005/03/29]</b></p>
+		<p>snap20050329 を置きました。snap20050219 からの変更は次の通りです。</p>
+		<ul>
+			<li>
+				[TSF] language bar の更新方法を sink を利用する正しい形に修正しました。</li>
+		</ul>
+		<p><b>[2005/02/19]</b></p>
+		<p>snap20050215 を置きました。snap20041208 からの変更は次の通りです。</p>
+		<ul>
+			<li>
+			Annotation の中に ``['' や ``]'' が含まれる時に辞書検索を行った場合、その候補以降が選択できないバグの修正。 (sabimaru 
+			さん、バグレポートありがとうございました)</li>
+			<li>
+			Annotation に ``['' が含まれる際の無毒化の rule の変更。上の問題と重なるのですが、annotation に ``['' 
+			を含む候補を登録すると、(concat ...) が登録されて登録内容が壊れます。このバグを fix しました。</li>
+			<li>
+			Text Service Framework 側も annotation が表示されるように修正。</li>
+			<li>
+				単候補表示から複数候補に切り替えて、``x'' を押し単候補表示に戻した時、丁度その候補に annotation があった場合に正しく表示されない bug 
+				の修正。</li>
+		</ul>
+		<p><b>[2004/12/08]</b></p>
+		<p>snap20041208 を置きました。snap20040929 からの変更は次の通りです。</p>
+		<ul>
+			<li>
+				Windows2000 環境において suspend した process が存在すると system 全体が停止するバグの修正。</li>
+		</ul>
+		<p>Thanks to Max Burmistrov for reporting the bug report about suspended process.</p>
+		<p><b>[2004/09/29]</b></p>
+		<p>snap20040929 を置きました。snap20040317 からの変更は次の通りです。</p>
+		<ul>
+			<li>
+			annotation の表示に tooltip を使うようにしました。</li>
+			<li>
+				minibuffer 表示に折り返しをつけるようにしました。</li>
+		</ul>
+		<p><b>[2004/03/17]</b></p>
+		<p>snap20040317 を置きました。snap20040223 からの変更は次の通りです。</p>
+		<ul>
+			<li>
+			Windows2000 で無効にしていた Text Service Framework の設定を再度有効にして compile し直しました。</li>
+			<li>
+			X-Mouse を利用すると Window がどの設定にしていても自動的に最前面に出てしまうバグを fix しました。(TOYAMA Sumio 
+			さん、バグレポート、ありがとうございます)</li>
+			<li>
+				Text Service Framework を利用している application で「変換中の文字列」の色設定が反映されていなかったバグを fix 
+				しました。</li>
+		</ul>
+		<p><b>[2004/02/23]</b></p>
+		<p>snap20040223 を置きました。snap20040218 からの変更は「Windows2000 
+			へのログオン時にエラーが発生して停止するバグの修正」です。(KOMURA Kazuhiroさん、デバッグに御付き合い下さいまして有難うございました)
+		</p>
+		<p><b>[2004/02/18]</b></p>
+		<p>snap20040218 を置きました。snap20040214 からの変更は、uistate.c を snap20040203 の時点まで巻戻した、です。</p>
+		<p>
+			これは「Windowsへのログオン直後にエラーが発生し，そこで止まってしまう」というバグに対して uistate.c の問題かと考えたからです。(KOMURA 
+			Kazuhiroさん、レポートありがとうございます)
+		</p>
+		<p>
+			取り敢えず、これで様子見のつもりです。</p>
+		<p>
+			また 「Winlogon の画面の IME を skkime にすると skkiserv 
+			が起こせないので、変換の都度(それは必ず失敗するが)長時間待たされることになる」というバグが残っていることに気付きました。さすがに、そこの IME 
+			を切り替えることはおすすめできないのですが、何か対処するつもりです。(virtualpc の御陰でテストしやすくなりました)
+		</p>
+		<p><b>[2004/02/14]</b></p>
+		<p>snap20040214 を置きました。snap20040203 からの変更は、微妙な調整のみです。</p>
+		<ul>
+			<li>言語バーの更新頻度、タイミングを調整しました。</li>
+			<li>
+				status window が白いまま表示される期間が長いのを WM_ERASEBKGND のところで「無効時 
+				bitmap」を貼り付けることで胡麻化しました。</li>
+		</ul>
+		<p>
+			です。前者の言語バーの調整で、言語バーが無反応になったりする現象が抑えられればと期待しています。</p>
+		<p><b>[2004/02/04]</b></p>
+		<p>snap20040203 を置きました。snap20031212 からの変更点は、</p>
+		<ul>
+			<li>
+			LiteStep など特定の application ないし shell と組み合わせた時に status window が無反応になる (NAKAMURA 
+			Toshikazu さん、バグレポートありがとうございます)、</li>
+			<li>
+				[TSF] 直接コード入力モードの2番目の menu で候補を選択する際のキーが正しく表示されない、</li>
+		</ul>
+		<p>
+			バグの修正です。</p>
+		<p>
+			<a href="skkime-oldnews.jis.html">[過去のニュース]</a>
+		</p>
+		<h2 class="bg"><a id="introduction">&nbsp;[software の紹介]&nbsp;</a></h2>
+		<p>SKKIME は、Microsoft Windows 上で動作する Input Method Editor の一種です。 GNU General Public 
+			License に従った free software として配布されます。現在 Windows'98 で動作するもの及び Windows2000 
+			(Professional?)上で動作するものの2つが存在します。
+		</p>
+		<p>SKKIME は、Nemacs, Mule, Demacs 上で動作する日本語入力環境を提供している SKK というシステムに似せて Windows の IME 
+			の形で実装を行ったものです。
+		</p>
+		<h2 class="bg">&nbsp;[目次]&nbsp;</h2>
+		<ul>
+			<li>
+				<a href="#skkime9x">skkime for Windows9x</a></li>
+			<li>
+				<a href="#skkimeWin2kXP">skkime for Windows2000/XP</a></li>
+			<li>
+				<a href="#link">リンク </a>
+			</li>
+		</ul>
+		<hr />
+		<h2 class="subbg"><a id="skkime9x">
+			&nbsp;[SKKIME for Windows'98]&nbsp;
+		</a></h2>
+		<p><b>カスタマイズ</b></p>
+		<p>パッケージに添付されている ReadMe.TXT を読むのが一番なのですが、取り敢えず問題になりそうなところだけをここに抜き出して書いておきます。</p>
+		<table border="1">
+			<tr>
+				<th>
+					問題</th>
+				<th>
+					対処方法</th>
+			</tr>
+			<tr>
+				<td>改行キーを確定リターンとしたい</td>
+				<td>(setq skk-egg-like-new-line t)</td>
+			</tr>
+			<tr>
+				<td>``@'' で日付が入るのが困る</td>
+				<td>(define-key skkinput-map "@" 'j-self-insert)</td>
+			</tr>
+			<tr>
+				<td>Large 辞書の指定は？</td>
+				<td>(setq skk-aux-large-jisyo 辞書のパス)</td>
+			</tr>
+			<tr>
+				<td>``ohhon'' で ``おっほん'' と入力したい</td>
+				<td>(setq skk-rom-kana-rule-list (cons '("oh" "h" (nil. nil)) 
+					skk-rom-kana-rule-list)</td>
+			</tr>
+		</table>
+		<p>default.el を直接編集されてもかまわないですが、削除してしまったりしないで下さい。default.elが無くなると…仮名入力程度しかできなくなります。</p>
+		<p><b>インストール方法</b></p>
+		</>
+		<p>配布ファイルの中に含まれる SKKIME98.INF 
+			を右クリックして下さい。メニューに含まれているインストールという項目を選べば、必要なファイルがコピーされインストールは完了です。</p>
+		<p>SKKIME98 を使う時には「設定」→「コントロールパネル」→「キーボード」→「言語」でSKKIME98 を追加して下さい。
+		</p>
+		<p>通常は ALT + SHIFT で IME を切り替えて使うのが吉でしょう。 IME FUNCTION 
+			を多用しているアプリケーションなどは動かない筈です。(漢字から読みを得たいとか、そういうことは出来ませんので)
+		</p>
+		<p><b>ソースコードから実行形式を作るにあたって</b></p>
+		<ol>
+			<li>
+				<a href="http://www.microsoft.com/ddk">http://www.microsoft.com/ddk</a>
+			から Windows'98 DDK を拾って来ます。Windows'98 DDK が既にインストールされている場合には、この作業は不要です。</li>
+			<li>
+			Windows'98 DDK をインストールします。デフォルトでは /98DDK にインストールされると思います。</li>
+			<li>
+			/98DDK/src/ime/jpn の jpn の変わりに SKKIME98 のソースツリーを jpn という名前で移動させます。</li>
+			<li>
+				/98DDK/lib/i386/[free,checked] に Visual C++ の library から ws2_32.lib をコピーします。</li>
+		</ol>
+		<p>これで準備は整いました。
+		</p>
+		<ol>
+			<li>
+			/98DDK/src/ime/jpn/skkiserv/[a,m] に移動して nmake.exe を実行します。skkiserv.exe 及び 
+			skkisrvm.exe が作られます。必要に応じて Makefile を適宜修正して下さい。コンパイルオプションを変更するなど…。</li>
+			<li>
+				/98DDK/src/ime/jpn で build -cZ を実行すると、SKKIME98 が build され 
+				/98DDK/lib/i386/[free,checked] 以下にファイルがコピーされます。このあたりは DDK の他のサンプルの build 
+				方法と同じです。この時、skkiserv.exe, skkisrvm.exe も一緒にコピーするので、先に make しておく必要があるだけです。</li>
+		</ol>
+		<p><b>更新履歴及びダウンロード</b>
+		</p>
+		<ul>
+			<li>
+				SKKIME98-1.0beta9 (<a href="arc/skkime98/skkime98-1.0beta09.tar.gz"><s>ソースコード</s>(lostしました…)</a>/実行形式<a href="arc/skkime98/skkime98-1.0beta09-freebuild.lzh">lzh</a>,
+				<a href="arc/skkime98/skkime98-1.0beta09-freebuild.tar.gz">tar+gz</a>)
+				<ul>
+					<li>
+						lisp 解釈部分で文字列の解釈に "\057\057" と escape された文字が連続した場合、2つ目の文字が escape 
+						が解除されないバグを修正しました。</li></ul></li>
+			<li>
+				SKKIME98-1.0beta8 (<a href="arc/skkime98/skkime98-1.0beta08.tar.gz">ソースコード</a>/実行形式<a href="arc/skkime98/skkime98-1.0beta08-freebuild.lzh">lzh</a>,
+				<a href="arc/skkime98/skkime98-1.0beta08-freebuild.tar.gz">tar+gz</a>)
+				<ul>
+					<li>
+					DebugPrintf を DEBUGPRINTF マクロ経由で呼び出すように修正しました。</li>
+					<li>
+						実行形式が freebuild environment で作られてなかった (beta07) ので、build し直しました。</li></ul></li>
+			<li>
+				SKKIME98-1.0beta7 (<a href="arc/skkime98/skkime98-1.0beta07.tar.gz">ソースコード</a>/実行形式<a href="arc/skkime98/skkime98-1.0beta07-bin.lzh">lzh</a>,
+				<a href="arc/skkime98/skkime98-1.0beta07-bin.tar.gz">tar+gz</a>)
+				<ul>
+					<li>
+						変換結果を登録する時に "/" のような quote されなければならない文字が quote されずそのまま登録されていたバグを修正しました。</li>
+				</ul></li>
+			<li>
+				SKKIME98-1.0beta6 (<a href="arc/skkime98/skkime98-1.0beta06.tar.gz">ソースコード</a>/<a href="arc/skkime98/skkime98-1.0beta06-bin.tar.gz">実行形式)</a>
+				<ul>
+					<li>
+					Mixed Unicode Version で FullWidth Tilder が上手く入力できないバグを修正致しました。</li>
+					<li>
+						``_'' が変換動作中に上手く入力されないバグを修正致しました。</li>
+				</ul>
+			</li>
+		</ul>
+		<p>バグレポートして下さった方々、本当にありがとうございます。
+		</p>
+		<p>
+			alphaXX は Nifty の Web Page 制限のために削除致しました。手元には保管してありますので、昔のバグありversion 
+			が欲しいとおっしゃられる方は私宛にメールして下さい。
+		</p>
+		<p>alpha version から beta までの更新履歴は<a href="skkime98-changelog.txt">こちら</a>です。</p>
+		<p><b>現在知られている不具合</b>
+		</p>
+		<p>現在知られている不具合(問題点)は次の通りです。
+		</p>
+		<ul type="circle">
+			<li>
+			Uninstall できません。"C:\Windows\System\skkime98.ime"," 
+			C:\Windows\System\skkim98m.ime", "C:\Windows\Ime\Skkime98" を削除すれば取り敢えず 
+			Uninstall できます。その場合にはあらかじめキーボードのプロパティから SKKIME98 を削除しておいて下さい。レジストリは 
+			CURRENT_USER と LOCAL_MACHINE の software\misc\windows\currentversion の下を削除して下さい。</li>
+			<li>
+			skkserv と通信できなかった時に TimeOut をきっちりと待ちますので、反応が鈍くなります。skkserv 
+			が存在しなかった場合に補助辞書を読み込むという機能も、skkserv を起こしに行くという機能もありません。</li>
+			<li>
+			ユーザ辞書のコードを日本語EUC決め打ちにしてあります。</li>
+			<li>
+				skk-aux-large 辞書を指定しても上手く辞書を読み込むことができないことがあるようです。wskkserv.exe 
+				を利用すれば仮名漢字変換が可能ではあるようなのですが…。</li>
+		</ul>
+		<p><b>動作確認を行ったアプリケーション</b></p>
+		<ul>
+			<li>
+			NiftyManager 5.00</li>
+			<li>
+			FrontPage Express Version 2.0.2 11118</li>
+			<li>
+			IBM ホームページビルダー 2001</li>
+			<li>
+			Notepad</li>
+			<li>
+			WordPad</li>
+			<li>
+			Word'98</li>
+			<li>
+			Internet Explorer 5.0</li>
+			<li>
+			MS-DOS prompt</li>
+			<li>
+				Windows logon</li>
+		</ul>
+		<hr />
+		<h2 class="subbg"><a id="skkimeWin2kXP">
+			&nbsp;[SKKIME for Windows2000]&nbsp;</a>
+		</h2>
+		<p><b>[開発の状況]</b></p>
+		<p>
+			skkiserv を全面的に書き換えました。また dialog の設定部分を一新しました。</p>
+		<p>Windows'98 版との違いは次の通りです。</p>
+		<ul>
+			<li>
+			IME は skkiserv.exe と Named Pipe を利用してメッセージのやり取りを行います。実際に辞書の管理を行うのは skkiserv.exe 
+			の仕事となっています。</li>
+			<li>
+			Windows2000 の制約から Unicode 版のみです。</li>
+			<li>
+			設定をファイルに置くのではなく、レジストリの中に置くように修正しました。</li>
+			<li>
+				以前の skkiserv.exe と違い、skkiserv.exe が読み込むのは辞書設定だけになっています。(lisp を parse するのを DLL 
+				内でするのは無理がありましたが、レジストリに書くようにしましたので)</li>
+		</ul>
+		<p><b>[既知の問題点] </b>
+		</p>
+		<ul>
+			<li>
+				<s>設定ダイアログの不足：入力中の色設定ダイアログ など </s>
+			色設定ダイアログは実装(2003/01/10)</li>
+			<li>
+			設定ダイアログの不備：幾つかのボタンが動作しない(「更新」)</li>
+			<li>
+				<s>LISP：j-num-list を更新していないので、times が動作しない。</s></li>
+			<li>
+			ユーザ辞書：skkiserv スタート時のユーザ辞書の状態判定が甘い。</li>
+			<li>
+			UI Window が RootWindow Style？ の時におかしくなる。(デスクトップで文字入力を試すと簡単に再現できる)</li>
+			<li>
+				<s>IME が閉じている状態で再変換すると変になる。</s>
+			(2003/01/02)
+			</li>
+			<li>
+				<s>ソート済み辞書の okuri-ari 検索に失敗する</s><s>ことがある。手元で再現させようとテスト中、まだ具体的な再現方法が分からない</s>。<s>Release 
+					Build 時、最適化にひっかかって発生するようである。最適化によって問題が出る部分は修正したので、テストを Release Build 
+					で継続中。(2003/01/04)</s>
+			fix できた模様。(2003/01/10)</li>
+			<li>
+				<s>候補表示の際に意味を表示する。ただし、これは変換候補表示 Window のデザインにも関わるので、どう解決するかはまだ思いついていない。</s>
+			Annotation の表示機能を追加 (2003/01/13)</li>
+			<li>
+				<s>Text Service Framework との連携がない。Text Service Framework というのは OfficeXP, WindowsXP 
+					の伸びる Toolbar のあたりを司る代物です。</s> Text Service Framework の対応までは行かないが、<s>言語バー用のコードを追加。(2003/01/27)</s>
+			2003/01/27 の段階のバグを修正。(2003/01/30) default の IME にすると派手に落ちるバグの修正？ (2003/02/01) 
+			初期化/非初期化位置の調整。(2003/02/02) 更に調整。(2003/02/13)</li>
+			<li>
+				<s>ログオフが遅くなる？</s>
+			(2003/04/28) 修正＆テスト中です。</li>
+			<li>
+				イベントログのアプリケーションに UserEnv の警告が出る。(2003/05/28) 
+				調査中です。どの操作が具体的に悪いことをしているのか…(勿論レジストリ操作が問題なわけですが)。</li>
+		</ul>
+		<p><b>[未解決のバグリスト]</b></p>
+		<table border="1">
+			<tr>
+				<th>
+					現象
+				</th>
+				<th>
+					取り敢えず対処方法
+				</th>
+				<th>
+					発生した環境
+				</th>
+				<th>
+					レポート日
+				</th>
+				<th>
+					状況
+				</th>
+			</tr>
+			<tr>
+				<td>言語バーのアイコンが変になることがある。(例. ツールボタンが2つ入るなど)</td>
+				<td>言語バーをタスクバーにしまってから復元すれば一応余分なアイコンは消えるようである。</td>
+				<td>WindowsXP (WindowsUpdate により SP1) + OfficeXP SP2
+				</td>
+				<td>2003/03/12</td>
+				<td>調査中</td>
+			</tr>
+			<tr>
+				<td>言語バーのアイコンが JP という青いアイコンだけになる</td>
+				<td>不明</td>
+				<td>Windows2000Pro + Office2000 + MS-Project2002</td>
+				<td>2003/03/10</td>
+				<td>環境構築中</td>
+			</tr>
+			<tr>
+				<td>特定のフォルダで Shift+Delete でファイルを削除しようとすると、Exprorer が「応答なし」になる</td>
+				<td>不明</td>
+				<td>Windows2000Pro + Office2000 + MS-Project2002</td>
+				<td>2003/03/10</td>
+				<td>環境構築中</td>
+			</tr>
+			<tr>
+				<td>特定のアプリケーションで仮名が半角カタカナでしか入らない？</td>
+				<td>不明</td>
+				<td>WindowsXP + CHOCOA/PuTTY？(未確認)</td>
+				<td>2002/?/?</td>
+				<td>調査中</td>
+			</tr>
+		</table>
+		<p>やはり言語バー (Text Service Framework) まわりは難しいですね…。DDK の中にサンプルがあれば良いのですが。(PlatformSDK 
+			の中にはあるが、そちらは COM を作ろうになってしまう)</p>
+		<p><b>[実装リストに入っているが未実装の機能]</b></p>
+		<ul>
+			<li>
+				<s>Reconversion の実装。</s>
+			Reconversion の kakasi との連携。</li>
+			<li>
+			Reverse Conversion。辞書の構造上、逆変換を行うのは非常に困難であるが…一応リストに加えておく。恐らくは kakasi 
+			と連携するぐらいしか手がない。</li>
+			<li>
+			連想辞書、edict 辞書の対応…。</li>
+			<li>
+				<s>Text Service Framework の実現。例えば、Outlook Express では言語バーがきちんと更新されませんが、これは Text 
+					Service Framework 経由で呼ばれているからです。次期 Windows では IME はきっと COM 
+					になると予想していますし、この対応はしなければ…。</s>
+			仮実装(テスト中)(2003/05/28)</li>
+			<li>
+				<s>再帰登録モードの抑制。PSO 
+					で遊んでいて…チャット中に再帰登録モードに入ると悲しいので、例えば「候補表示ウィンドウが自前(IME側)では持てない場合には、再帰登録モードには入らない」とか、Property 
+					設定でコントロールできるようにするとか考えています。</s>
+			一応実装…が、きちんと IME に composition window 
+			は表示しない、とアプリケーションから伝えられないとうまく動作しないです。画面外にウィンドウを表示して胡麻化そうとするタイプではうまく動作しません。また、Text 
+			Service Framework 側には…この操作はないです。アプリケーションからどういう情報を得られるのか…？(2003/05/28)</li>
+			<li>
+			T-Code 入力。</li>
+			<li>
+				<s>DVORAK 配列に対応する。</s></li>
+			<li>
+				数値変換の <s>#4,</s> #5 の実装。(これは 1.0 のリリースが終わってからにするべきか)
+			</li>
+			<li>辞書登録が「同期ボタン」を押すまで反映されなくなるバグ (Windows2000SP4)、skkiserv.exe との接続の問題、とまでは推測できるのですが…。</li>
+			<li>カナロックするバグ (Windows2000SP4)</li>
+		</ul>
+		<p>
+			WINDDK2600 にて開発を行っているので、ソース自身は WindowsXP/2000 
+			の両方で動くバイナリを作成できる筈ですが、まだきちんと確認していません。</p>
+
+<hr />
+    <p>
+        <strong>[ダウンロード(for 1.0)]</strong></p>
+		<p>まだ十分にテストされていない開発段階のものですが、ここに置きます。</p>
+		<p>
+            どの環境で build したのかにあわせて、バイナリを複数用意することにしました。VS2005 は WindowsSDK で、VS2003, VC6 は PlatfromSDK で build されたバイナリになります。</p>
+        <table>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.0-2007/07/28">SNAPSHOT2007/07/28</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-win2kxp-snap20070728.tar.gz">source</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-win2k-vc6build-snap20070728.tar.gz">Windows2000(vc6 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-win2k-vs2003build-snap20070728.tar.gz">Windows2000(vs2003 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-winxp-vs2003build-snap20070728.tar.gz">WindowsXP(vs2003 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-winxp-vs2005build-snap20070728.tar.gz">WindowsXP (vs2005 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-winvista-build-snap20070728.tar.gz">WindowsVista (32bit, vs2005)</a></td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.0-2007/06/20">SNAPSHOT2007/06/20</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    <a href="arc/skkime/skkime1.0-win2kxp-snap20070620.tar.gz">source</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    <a href="arc/skkime/skkime1.0-winxp-bin-snap20070620.tar.gz">WindowsXP(vs2005 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    WindowsVista(vs2005 build)</td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.0-2007/06/11">SNAPSHOT2007/06/11</a> 
+                </td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    <a href="arc/skkime/skkime1.0-win2kxp-snap20070611.tar.gz">source</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    <a href="arc/skkime/skkime1.0-winxp-bin-snap20070611.tar.gz">WindowsXP(vs2005 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    WindowsVista(vs2005 build)</td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; height: 48px;">
+                    <a href="#changelog-skkime1.0-2007/04/26">SNAPSHOT2007/04/26 </a>
+                    </td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; height: 48px; ">
+                    <a href="arc/skkime/skkime1.0-win2kxp-snap20070426.tar.gz">source</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; height: 48px;">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; height: 48px;">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid;  height: 48px;">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; height: 48px; ">
+                    <a href="arc/skkime/skkime1.0-winxp-bin-snap20070426.tar.gz">WindowsXP(vs2005 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; height: 48px;">
+                    ---------------</td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.0-2007/04/09">SNAPSHOT2007/04/09</a> 
+                    </td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    <a href="arc/skkime/skkime1.0-win2kxp-snap20070409.tar.gz">source</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    <a href="arc/skkime/skkime1.0-winxp-bin-snap20070409.tar.gz">WindowsXP(vs2005 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+            </tr>            
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.0-2007/04/07">SNAPSHOT2007/04/07</a>
+                </td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    <a href="arc/skkime/skkime1.0-win2kxp-snap20070407.tar.gz">source</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+                <td style=" border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    <a href="arc/skkime/skkime1.0-winxp-bin-snap20070407.tar.gz">WindowsXP(vs2005 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    <a href="#changelog-skkime1.0-2006/11/12">SNAPSHOT2006/11/12</a>
+                </td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid; ">
+                    <a href="arc/skkime/skkime1.0-win2kxp-snap20061112.tar.gz">source</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-win2k-bin-snap20061112.tar.gz">Windows2000 (vs2003 build)</a></td>
+                <td style=" border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                   <a href="arc/skkime/skkime1.0-winxp-bin-snap20061112.tar.gz"> WindowsXP (vs2003 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid; ">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    ---------------</td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    <a href="#changelog-skkime1.0-2006/10/15">SNAPSHOT2006/10/15</a>
+                </td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid; ">
+                    <a href="arc/skkime/skkime1.0-win2kxp-snap20061015.tar.gz">source</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-win2k-bin-snap20061015.tar.gz">Windows2000 (vs2003 build)</a></td>
+                <td style=" border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-winxp-bin-snap20061015.tar.gz">WindowsXP (vs2003 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid; ">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    ---------------</td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.0-2006/07/06">SNAPSHOT2006/07/06</a>
+                </td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    <a href="arc/skkime/skkime1.0-win2kxp-snap20060706.tar.gz">source</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-win2k-bin-snap20060706.tar.gz">Windows2000 (vs2003 build)</a></td>
+                <td style=" border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-winxp-bin-snap20060706.tar.gz">WindowsXP (vs2003 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; height: 48px;">
+                    <a href="#changelog-skkime1.0-2006/02/16">SNAPSHOT2006/02/16</a>
+                </td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid;  height: 48px;">
+                    <a href="arc/skkime/skkime1.0-win2kxp-snap20060216.tar.gz">source</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; height: 48px;">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; height: 48px;">
+                    <a href="arc/skkime/skkime1.0-win2k-bin-snap20060216.tar.gz">Windows2000 (vs2003 build)</a></td>
+                <td style=" border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; height: 48px;">
+                    <a href="arc/skkime/skkime1.0-winxp-bin-snap20060216.tar.gz">WindowsXP (vs2003 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid;  height: 48px;">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; height: 48px;">
+                    ---------------</td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.0-2006/01/26">SNAPSHOT2006/01/26</a>
+                </td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    <a href="arc/skkime/skkime1.0-win2kxp-snap20060126.tar.gz">source</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-win2k-bin-snap20060126.tar.gz">Windows2000 (vs2003 build)</a></td>
+                <td style=" border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-winxp-bin-snap20060126.tar.gz">WindowsXP (vs2003 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    <a href="#changelog-skkime1.0-2005/11/14">SNAPSHOT2005/11/14</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid; ">
+                    <a href="arc/skkime/skkime1.0-win2kxp-snap20051114.tar.gz">source</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-win2k-bin-snap20051114.tar.gz">Windows2000 (vs2003 build)</a></td>
+                <td style=" border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-winxp-bin-snap20051114.tar.gz">WindowsXP (vs2003 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid; ">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    ---------------</td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    <a href="#changelog-skkime1.0-2005/10/08">SNAPSHOT2005/10/08</a>
+                </td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid; ">
+                    <a href="arc/skkime/skkime1.0-win2kxp-snap20051008.tar.gz">source</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-win2k-bin-snap20051008.tar.gz">Windows2000 (vs2003 build)</a></td>
+                <td style=" border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-winxp-bin-snap20051008.tar.gz">WindowsXP (vs2003 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid; ">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    height: 29px; border-bottom-style: solid">
+                    ---------------</td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.0-2005/10/01">SNAPSHOT2005/10/01</a>
+                </td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    <a href="arc/skkime/skkime1.0-win2kxp-snap20051001.tar.gz">source</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-win2k-bin-snap20051001.tar.gz">Windows2000 (vs2003 build)</a></td>
+                <td style=" border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-winxp-bin-snap20051001.tar.gz">WindowsXP (vs2003 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.0-2005/08/31">SNAPSHOT2005/08/31</a>
+                </td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    <a href="arc/skkime/skkime1.0-win2kxp-snap20050831.tar.gz">source</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-win2k-bin-snap20050831.tar.gz">Windows2000 (vs2003 build)</a></td>
+                <td style=" border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-winxp-bin-snap20050831.tar.gz">WindowsXP (vs2003 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.0-2005/08/13">SNAPSHOT2005/08/13</a>
+                </td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    <a href="arc/skkime/skkime1.0-win2kxp-snap20050813.tar.gz">source</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-win2k-bin-snap20050813.tar.gz">Windows2000 (vs2003 build)</a></td>
+                <td style=" border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-winxp-bin-snap20050813.tar.gz">WindowsXP (vs2003 build)</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid; ">
+                    ---------------</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid;
+                    border-bottom-style: solid">
+                    ---------------</td>
+            </tr>
+    </table>
+    
+<hr />
+		<p><b>[ダウンロード(for 1.5)]</b></p>
+
+        <table style="width: 100%;">
+        <thead><tr><th>date</th><th>source</th><th>Windows2000</th><th>WindowsXP</th><th>Vista(32bit)</th><th>Vista(64bit)</th><th>Windows7(32bit)</th><th>Windows7(64bit)</th></tr></thead>
+        <tbody>
+        <tr>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="#changelog-skkime1.5-2010/07/19">2010/07/19</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-snap20100719.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-win2k-bin-snap20100719.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-winxp-bin-snap20100719.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista32-bin-snap20100719.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista64-bin-snap20100719.tar.gz">○</a></td>
+            
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-win7_32-bin-snap20100719.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-win7_64-bin-snap20100719.tar.gz">○</a></td>
+        </tr>
+        <tr>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="#changelog-skkime1.5-2010/01/30">2010/01/30</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-snap20100130.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-win2k-bin-snap20100130.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-winxp-bin-snap20100130.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista32-bin-snap20100130.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista64-bin-snap20100130.tar.gz">○</a></td>
+            
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-win7_32-bin-snap20100130.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-win7_64-bin-snap20100130.tar.gz">○</a></td>
+        </tr>
+        <tr>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="#changelog-skkime1.5-2009/11/01">2009/11/01</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-snap20091101.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-win2k-bin-snap20091101.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-winxp-bin-snap20091101.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista32-bin-snap20091101.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista64-bin-snap20091101.tar.gz">○</a></td>
+            
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-win7_32-bin-snap20091101.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-win7_64-bin-snap20091101.tar.gz">○</a></td>
+        </tr>
+        
+        <tr>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="#changelog-skkime1.5-2009/07/15">2009/07/15</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-snap20090715.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-win2k-bin-snap20090715.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-winxp-bin-snap20090715.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista32-bin-snap20090715.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista64-bin-snap20090715.tar.gz">○</a></td>
+            <td>-</td><td>-</td>
+        </tr>
+        <tr>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="#changelog-skkime1.5-2009/07/04">2009/07/04</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-snap20090704.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-win2k-bin-snap20090704.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-winxp-bin-snap20090704.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista32-bin-snap20090704.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista64-bin-snap20090704.tar.gz">○</a></td>
+            <td>-</td><td>-</td>
+        </tr>
+        
+        <tr>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="#changelog-skkime1.5-2009/06/28">2009/06/28</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-snap20090628.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-win2k-bin-snap20090628.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-winxp-bin-snap20090628.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista32-bin-snap20090628.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista64-bin-snap20090628.tar.gz">○</a></td>
+            <td>-</td><td>-</td>
+        </tr>
+        <tr>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="#changelog-skkime1.5-2009/06/18">2009/06/18</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-snap20090618.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-win2k-bin-snap20090618.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-winxp-bin-snap20090618.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista32-bin-snap20090618.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista64-bin-snap20090618.tar.gz">○</a></td>
+            <td>-</td><td>-</td>
+        </tr>
+        <tr>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="#changelog-skkime1.5-2009/04/23">2009/04/23</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-snap20090423.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-win2k-bin-snap20090423.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-winxp-bin-snap20090423.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista32-bin-snap20090423.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista64-bin-snap20090423.tar.gz">○</a></td>
+            <td>-</td><td>-</td>
+        </tr>
+        <tr>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="#changelog-skkime1.5-2009/01/18">2009/01/18</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-source-snap20090118.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-win2k-bin-snap20090118.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-winxp-bin-snap20090118.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista32-bin-snap20090118.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista64-bin-snap20090118.tar.gz">○</a></td>
+            <td>-</td><td>-</td>
+        </tr>
+        <tr>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="#changelog-skkime1.5-2008/11/07">2008/11/07</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-source-snap20081107.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-win2k-bin-snap20081107.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-winxp-bin-snap20081107.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista32-bin-snap20081107.tar.gz">○</a></td>
+        <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+            border-bottom-style: solid">
+            <a href="arc/skkime/skkime1.5-vista64-bin-snap20081107.tar.gz">○</a></td>
+            <td>-</td><td>-</td>
+        </tr>
+        </tbody>
+		</table>
+		<p>※ msvcrtをstatic linkするように変更してみました。</p>
+        <table width="100%">
+        <thead><tr><th>date</th><th>source</th><th>Windows2000<br />msvcrt</th><th>windows2000<br />msvcr71</th><th>WindowsXP<br />msvcrt</th><th>WindowsXP<br />msvcr71</th><th>WindowsXP<br />msvcr80</th><th>Vista(32bit)<br />msvcr80</th><th>Vista(64bit)<br />msvcr80</th></tr></thead>
+           <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.5-2008/07/21">2008/07/21</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-source-snap20080721.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-win2k-bin-msvcrt-snap20080721.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-win2k-bin-msvcr71-snap20080721.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winxp-bin-msvcrt-snap20080721.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winxp-bin-msvcr71-snap20080721.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winxp-bin-msvcr80-snap20080721.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-vista32-bin-msvcr80-snap20080721.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-vista64-bin-msvcr80-snap20080721.tar.gz">○</a></td>
+            </tr>
+           <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.5-2008/07/08">2008/07/08</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-source-snap20080708.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-win2k-bin-msvcrt-snap20080708.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-win2k-bin-msvcr71-snap20080708.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winxp-bin-msvcrt-snap20080708.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winxp-bin-msvcr71-snap20080708.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winxp-bin-msvcr80-snap20080708.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-vista32-bin-msvcr80-snap20080708.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-vista64-bin-msvcr80-snap20080708.tar.gz">○</a></td>
+            </tr>
+           <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.5-2008/01/30">2008/01/30</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-source-snap20080130.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-win2k-bin-msvcrt-snap20080130.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-win2k-bin-msvcr71-snap20080130.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winxp-bin-msvcrt-snap20080130.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winxp-bin-msvcr71-snap20080130.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winxp-bin-msvcr80-snap20080130.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-vista32-bin-msvcr80-snap20080130.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-vista64-bin-msvcr80-snap20080130.tar.gz">○</a></td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.5-2008/01/08">2008/01/08</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-source-snap20080108.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-win2k-bin-msvcrt-snap20080108.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-win2k-bin-msvcr71-snap20080108.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winxp-bin-msvcrt-snap20080108.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winxp-bin-msvcr71-snap20080108.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winxp-bin-msvcr80-snap20080108.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime-1.5-vista-snap20080108.msi">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime-1.5-vista_x64-snap20080108.msi">○</a></td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.5-2007/11/19">2007/11/19</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-source-snap20071119.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-binary-win2k-snap20071119-msvcrt.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-binary-win2k-snap20071119-msvcr71.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-binary-winxp-snap20071119-msvcrt.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-binary-winxp-snap20071119-msvcr71.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-binary-winxp-snap20071119-msvcr80.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-binary-winvista-snap20071119-msvcr80.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+            </tr>        
+        
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.5-2007/08/22">2007/08/22</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-win2kxp-snap20070822.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-win2k-vc6build-snap20070822.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-win2k-vs2003build-snap20070822.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winxp-vs2003build-snap20070822.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winxp-vs2005build-snap20070822.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winvista-build-snap20070822.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.5-2007/07/28">2007/0728</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-win2kxp-snap20070728.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-win2k-vc6build-snap20070728.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-win2k-vs2003build-snap20070728.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winxp-vs2003build-snap20070728.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winxp-vs2005build-snap20070728.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winvista-build-snap20070728.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.5-2007/06/20">2007/06/20</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-win2kxp-snap20070620.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-win2k-bin-snap20070620.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winxp-bin-snap20070620.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winvista-bin-snap20070620.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.5-2007/04/09">2007/04/09</a>
+                </td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-win2kxp-snap20070409.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.0-winxp-bin-snap20070409.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+            </tr>
+            <tr>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="#changelog-skkime1.5-2007/04/07">2007/04/07</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-win2kxp-snap20070407.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    <a href="arc/skkime/skkime1.5-winxp-bin-snap20070407.tar.gz">○</a></td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+                <td style="border-top-style: solid; border-right-style: solid; border-left-style: solid; text-align:center;
+                    border-bottom-style: solid">
+                    ×</td>
+            </tr>
+        </table>
+        
+            <p> build の影響が出るのは、msvcr の runtime の version です。 vc2003 build は msvcr7.1 に、vs2005 build
+                は msvcr8.0 に依存することになります。例えば、WindowsXP 無印の状態では mscvr8.0 は install されていませんので、runtime
+                を microsoft download から入手することになります。
+                </p>
+            <p>一応、<a href="arc/skkime/vccrt80.msi">開発環境の msvcr80 の package</a>を作成しました。</p>
+
+<hr />
+		<p><b>[更新履歴(for 1.0)]</b></p>
+		<p>まだ十分にテストされていない開発段階のものですが、ここに置きます。</p>
+		<ul>
+		    <li><a id="changelog-skkime1.0-2007/07/28">SNAPSHOT 2007/07/28</a>
+		    <ul>
+		    <li>Default の候補窓の表示位置を調整しました。</li>
+		    <li>[tsf] Microsoft Word で Font Style を忘れる現象を緩和する(予定)のコードを追加しました。(Mitsuru Oka さん、バグレポートありがとうございます)</li>
+		    <li>[tsf] IME を閉じた時に編集中のテキストが残るバグを修正しました。</li>
+		    <li>[tsf] ToolTip の表示位置が ToolTip が消える瞬間に別の位置に移動してしまうバグを修正しました。</li>
+		    <li>[tsf] vs2003 build で skimconf.exe が windowsxp style の dialogbox を表示できるように修正しました。(WindowsXP のみ)</li>
+		    </ul>
+		    </li>
+			<li>
+				<a id="changelog-skkime1.0-2007/06/20">SNAPSHOT 2007/06/20</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20070620.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20070620.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20070620.tar.gz">ソース</a>)
+		    <ul>
+    		<li> skimconf.exe で設定を変更した後、skkiserv.exe と通信するコードが、正しく初期化されていないために無効になっていました。(再度)</li>
+    		<li> ImmSetCompositionWindow が呼ばれた時に CandidateWindow を強制的に移動させるコードが存在したのですが、その中で CANDFORM を変更するという
+    		無理を行っていたがために Opera など一部のアプリケーションで Window を移動させると候補窓がおかしな位置になるというバグを引き起こしてい
+    		ました。CANDFORM は変更せず、ImmSetCandidateWindow が全く呼ばれない場合のみ Composition Window の位置にあわせて候補表示窓を移動させるよう
+    		にしました。</li>
+    		<li> CANDFORM が CS_POS の場合には、GetWindowInfo の rcWindow 相対で、CS_RECT の場合には ClientToScreen (rcClient相対)で、座標を
+    		解決するようにしました。これで Opera や jmeter で候補一覧表示窓がおかしな場所に出ることはなくなった筈です…。
+    		(yaskeさん、バグレポートありがとうございます)</li>
+    		<li><a href="arc/skkime/skkime1.0-winvista-bin-snap20070620.tar.gz">Vista 用に build したバイナリ</a>はまだ installer がありません。
+		    install の方法は先の通りです。uninstall の方法は regsvr /u skimic.dll を実行してから、Windows フォルダの IME\SKKIM10 を削除する、です。
+		    レジストリキーは HKLM\Software\TT\skkime\1.0 と HKCU\Software\TT\skkime\1.0 を抹消して下さい。</li>
+		    </ul>
+		    </li>
+			<li>
+				<a id="changelog-skkime1.0-2007/06/11">SNAPSHOT 2007/06/11</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20070611.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20070611.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20070611.tar.gz">ソース</a>)
+		    <ul>
+    		<li> skimconf.exe で設定を変更した後、skkiserv.exe と通信するコードが、正しく初期化されていないために無効になっていました。</li>
+    		<li> ImeSelect が FALSE の時に言語バーに触れると、異常に操作に時間がかかるようです。ImeSelect の中では言語バーを操作しないようにコードを書き換えました。</li>
+    		<li> skkiserv.exe で lisp evaluation を行う時、引数の number-list が空だと落ちてしまうバグを修正しました。</li>
+    		<li> Internet Explorer7 (Vista) は Protect Mode で動作しているため、skkiserv.exe と通信する local pipe が Low Integrity Mode で connection を張れるように security descriptor を変更する必要があり
+    		ました。ただ、IE7 から skkiserv.exe を起動させるようなことになってしまうと、未署名の skkiserv.exe を起動してもかまわないですか？とダイアログが出てしまいます。こちらは…どう対応したものか悩んで
+    		います。ちなみに、MS-IME のユーザ辞書が2つ存在するのも、Low Integrity Mode のためです。Low Integrity Modeで触れられる場所のユーザ辞書とそれ以外の辞書に分かれているようです。</li>
+		    </ul>
+		    <p> Vista で skkime を使う方法は、Administrator 権限の command prompt で windows フォルダ以下に IME\SKKIM10 を作成して、そこに skimconf.exe, skimic.dll, skkiserv.exe をコピーして、regsrv32 skimic.dll 
+		    と実行することです。一応、<a href="arc/skkime/skkime1.0-vista-bin-snap20070611.tar.gz">Vista 用に build したバイナリを</a>。ただ、Vista でのテストは非常に甘いですので(輪をかけて甘い)…注意が必要です。
+		    </p>
+		    </li>
+		    <li>
+				<a id="changelog-skkime1.0-2007/04/26">SNAPSHOT 2007/04/26</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20070426.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20070426.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20070426.tar.gz">ソース</a>)
+		    <ul>
+		    <li>ImeSelect で Application の終了時に言語バーからボタンの削除を行うようにしていたのですが、これは TSF Manager に任せてしまうのが良いようです。このボタンの削除に異常に時間がかかっていました。
+		    その余波で ImeSetActiveContext で言語バーにボタンを追加するのは、hIMC が NULL でない場合、NULL の場合は言語バーの更新だけ行うようにしました。これは IE6 がそのAPIまで呼び出すからです。(その後、
+		    ImeSelect (FALSE) が来るのですが、「削除されない」ようにしたので、あらかじめ登録しておかないように変更する作業が必要になったのです)</li>
+		    </ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2007/04/09">SNAPSHOT 2007/04/09</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20070409.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20070409.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20070409.tar.gz">ソース</a>)
+		    <ul>
+		    <li>[TSF] skkimmgr が _Uninit 時に _CloseUIElements を呼び出さなかったために、LayoutChange Notify が Unadvise されず、結果として Layout 状態が呼び出されなくなるバグが存在しました。
+		    IE などで候補 Window を表示した状態で IE を落とすことを繰り返すと発生します。_CloseUIElements を追加することで修正できたと思います。</li>
+		    </ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2007/04/07">SNAPSHOT 2007/04/07</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20070407.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20070407.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20070407.tar.gz">ソース</a>)
+		    <ul>
+		    <li>候補一覧でない状態の Annotation、メッセージ表示を ToolTip に変更しました。</li>
+		    <li>Minibuffer Text の扱いを候補一覧と同じ扱いに変更しました。</li>
+		    <li>マルチスクリーンで候補一覧の表示位置がおかしくなるバグを修正しました。(J.Sokodaさん、バグレポートありがとうございます)</li>
+		    <li>設定ダイアログを外部EXEに切り出しました。これは Windows Vista の Imm が TSF の wrapper に過ぎないため、TSF 側から ImeConfigure を呼び出さないためにです。</li>
+		    <li>[TSF] 候補一覧の表示位置を入力文字の位置の直下に変更しました。ただ、何も文字列がない状態では正しいレイアウト情報が送られないため、直接コード入力の時に何も文字が入力されていない場合、空白文字が1文字入力された状態にあることにしています。</li>
+		    <li> WindowsSDK 6.0 で build しているために (WindowsXP binary)、MSVCR80 が必要です。これは Vista で追加された Text Service Framework の機能に対応するためです。</li>
+		    </ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2006/11/12">SNAPSHOT 2006/11/12</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20061112.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20061112.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20061112.tar.gz">ソース</a>)
+		    <ul>
+    		<li>候補一覧表示になるまでの注釈が表示されないバグを修正しました。(regmog9 さん、バグレポートありがとうございました)</li>
+    		<li>Minibuffer で編集中に Message が表示されると編集中のテキストが見えなくなるので、先頭に「！」を表示するだけに留めるようにしました。ただマウスでカーソルを指定する時に影響が出ているように思えます…。</li>
+		    </ul></li>
+		    <li>
+				<a id="changelog-skkime1.0-2006/10/15">SNAPSHOT 2006/10/15</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20061015.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20061015.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20061015.tar.gz">ソース</a>)
+		    <ul>
+		    <li>``IwakU'' で ``IwaKu'' と同じ動作をするように変更しました。</li>
+		    <li>ImmSetActiveContext で ActiveContext でなくなった時に設定を破棄していたのですが、設定を読まずに破棄されることがあるためにアプリケーションを異常終了させていました。
+		    (OneNoteなど)。初期化がされていることを確認するコードを追加しました。Mitsuru Okaさん、バグレポートありがとうございました</li>
+		    </ul></li>
+		    <li>SNAPSHOT 2006/07/06 の<a href="arc/skkime/skkime1.0-win2k-bin-snap20060706b.tar.gz"> 置き直し (Windows2000 binary)</a>
+		    <ul>
+		    <li>inf ファイルに regsvr32 skimic.dll を実行する記述を追加しました。これは snap20060216 でも抜け落ちていた項目です。(phrolear さん、バグレポートありがとうございました)
+		    </li>
+		    </ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2006/07/06">SNAPSHOT 2006/07/06</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20060706.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20060706.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20060706.tar.gz">ソース</a>)
+		    <ul>
+		    <li>候補一覧からミニバッファの単語登録モードへ移行する時に HenkanCount の数と候補の総数を見比べていたのですが、HenkanCount が 1 からはじまるのに対して
+		    候補の総数は当然0から数えてなのでタイミングがずれるということになっていました。TSF 側にも同様のバグが存在しましたので、修正しました。
+		    (sabimaru さん、バグレポートありがとうございました)</li>
+		    </ul></li>
+
+			<li>
+				<a id="changelog-skkime1.0-2006/02/16">SNAPSHOT 2006/02/16</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20060216.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20060216.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20060216.tar.gz">ソース</a>)
+				<ul>
+				<li>[tsf] Microsoft Excel2003 及び Microsoft PowerPoint 2003 と xkeymacs を組み合わせた時に C-xC-s のような 2 ストロークキーが正しく取り扱えない問題を解決しました。(oishi さん、バグの再現情報ありがとうございました)
+				具体的には、TextServiceFramework の OnTestKeyDown で context bit に 1 が立っているかどうかのチェックを行い、1 の時には key を filter しないよう修正しました。</li>
+				<li>delete-backward-char の動作を skk10.x 互換にしました。具体的には「送り仮名変換」の際に「送り仮名を全て delete すると確定する」です。以前は cursor 位置が henkan-end-point より小さくなった時に delete-implies-kakutei
+				の「確定」処理に入っていたのですが、cursor 位置と henkan-end-point が等しい時にも「確定」するように変更しています。</li>
+				<li>言語バーの icon のロードを LR_SHARED 付きで行うように修正しました。また snap20060125 の tsf の仮対処は破棄しました。(snap20060125 の方法では、Shell に focus をあわせてから入力言語を切り替えると言語バーに icon が残ってしまう
+				バグがあります。)</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2006/01/26">SNAPSHOT 2006/01/26</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20060126.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20060126.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20060126.tar.gz">ソース</a>)
+				<ul>
+					<li>MS Money にて日本語入力を行うと MS Money が落ちてしまうバグの修正を行いました。また、MS Money にて日本語入力を行うとカーソルが左端に移動して入力した文字の後に移動しないバグを修正しました。(Taisuke Shimamoto さん、バグレポート有り難うございました)</li>
+					<li>rom-kana-rule-list の現状態に ``nn'' と ``nN'' のようなケースの違う文字を与えることができないバグを修正しました。(oishi さん、バグレポートありがとうございました)</li>
+					<li>Visual Studio 2005 などで利用していると Cicero Window が消えてしまう症状を緩和しました。(TSF)</li>
+					<li>IME が disable の場合に「入力方式」のアイコンが disable になるように修正しました。(TSF)</li>
+					<li>アスキー入力の時に DEL+CONTROL のキーが入らないバグを修正しました。</li>
+					<li>Status Window の位置がアプリケーションで共有されるように修正しました。(TSF を利用しない場合)</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2005/11/14">SNAPSHOT 2005/11/14</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20051114.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20051114.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20051114.tar.gz">ソース</a>)
+				<ul>
+					<li>かなモード時、かなprefixが残っている場合には Composition を閉じない修正を 2005/10/08 version で追加したのですが、「お」の扱い
+					に問題が発生したために Composition String の有無のみ利用するように戻しました。
+					(NAKAMURA Toshikazu さん、Hisato Eguchi さん、バグレポートありがとうございます。原因は恐らくこれです。)</li>
+					<li>詳細なテキストサービスがオフになっている場合に従来の Status Window を表示するようにしました。直接レジストリキーを
+					参照して、設定のオンオフを見ています。正しいやり方ではないのでしょうけれど…。</li>
+					<li>従来の Status Window の表示非表示の切り替えを ImeActiveContext から WM_SETFOCUS, WM_KILLFOCUS に移動させました。
+					オフの状態で Internet Explorer 使用時に ImeActiveContext の FALSE が届いて Status Window が表示されなくなってしまうため
+					です。</li>
+					<li>Guide Window の表示を moveDefault だけに戻しました。これは CARET の移動にもかかわらず IMR_CANDIDATEWINDOW の結果が更新
+					されないためです。恐らくは Candidate 表示でもないのに CANDIDATEWINDOW のリクエストを繰り返すことが規格外だからでしょう。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2005/10/08">SNAPSHOT 2005/10/08</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20051008.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20051008.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20051008.tar.gz">ソース</a>)
+				<ul>
+					<li> Windows2000 で Popup Menu が正しく表示されなくなっていましたので、修正しました。WindowsXP 側だと InsertMenuItem に
+					MIIM_STRING を設定し、MFS_STRING を利用しない (help では MFS_STRING は obsolete と書かれています) のが良いようなのですが、
+					Windows2000 では MIIM_TYPE が設定されている時の挙動が微妙です。今は、InsertMenuItem に失敗した場合に、MIIM_STRING が設定さ
+					れていれば、MIIM_STRING を外して MFS_STRING の設定で再度試みるようにしてみました。
+					(NAKAMURA Toshikazu さん、バグレポートありがとうございます)</li>
+					<li> Windows2000 の Status Menu を Mouse Click しての動作を変更してみました。WM_SETCURSOR の扱いを Window Handle が
+					Status Window ものと等しければ message identifier を変更するようにしています。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2005/10/01">SNAPSHOT 2005/10/01</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20051001.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20051001.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20051001.tar.gz">ソース</a>)
+				<ul>
+					<li>
+					直接コード入力のメニューで j-previous-candidate にバインドされたキーが有効で無かったバグを修正しました。(homutan 
+					さん、バグレポートありがとうございます)</li>
+					<li>
+					j-prefix-list の読み込み上限を緩和しました。必要な量を malloc するように修正しました。(Kay-ara-ARAKAWA 
+					さん、レポートありがとうございます)</li>
+					<li>
+					j-prefix-list の設定メニューで DELETE が無効(listview 
+					に影響しない)になっているバグを修正しました。ListView_DeleteItem 忘れです。</li>
+					<li>
+					右クリックメニューが化けている問題の修正を行いました。これは MFT_STRING が obsolete、MIID_STRING に直す作業です。</li>
+					<li>
+						[TSF]office などの application 
+						で、カタカナモードで「puroguramu」と入力すると「プロぐらむ」と入力されるバグを修正しました。(Hiroto Kagotani 
+						さん、バグレポートありがとうございます)</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2005/08/31">SNAPSHOT 2005/08/31</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20050831.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20050831.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20050831.tar.gz">ソース</a>)
+				<ul>
+					<li>
+					WindowsXP 版の inf ファイルに 64bit 環境で 32bit binary の skimic.dll 
+					を登録する処理が抜けていたので追加しました。(Kazutaka Doi さん、レポート、ありがとうございました)</li>
+					<li>
+					[TSF] Status Window の位置が変な場所(TaskBarの上あたり)に出るバグを修正しました。</li>
+					<li>
+						[TSF] LanguageBar に Btn を追加する位置を OpenStatusWindow に移動しました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2005/08/13">SNAPSHOT 2005/08/13</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20050813.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20050813.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20050813.tar.gz">ソース</a>)
+				<ul>
+					<li>
+					Guide Window のマウス操作 (カーソル位置指定、右クリックメニュー)が動作していなかったので修正しました。</li>
+					<li>
+					候補表示 Window の注釈を自前の ToolTip Window Class で表示するように修正しました。</li>
+					<li>
+					WindowsXP 64bit Edition (Windows2003Server x64/ia64も対応可能) で動作するよう *.inc, *.inf, 
+					Makefile などを修正しました。 x64環境下では \windows\syswow64, "\windows\ime (x86)"下に x86 
+					binary を、\windows\system32, \windows\ime 下に amd64 binary を、置き 
+					TextServiceFramework の dll についてはそれぞれ regsvr32 する必要があるようです。(regsvr32 が wow64node 
+					の clsid に登録するか 標準の clsid に登録するか判別するようです)</li>
+					<li>
+					辞書セーブの機能を追加しました。</li>
+					<li>
+					ローマ字仮名ルールをレジストリから読み込む上限を 8192 に変更しました。</li>
+					<li>
+						[TSF] Status Window の表示位置を修正しました。また Mouse による cursor の位置変更も行えるように修正しました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2005/05/26">SNAPSHOT 2005/05/26</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20050526.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20050526.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20050526.tar.gz">ソース</a>)
+				<ul>
+					<li>
+					GUIDE 表示時にカーソルが GUIDE Window にないと、マウスクリックの段階でマウスカーソルの位置にカーソルを移動させようとして INT_MAX 
+					回ループしようとするバグが存在しました。(Tsuyoshi Kitamoto さん、バグレポートありがとうございました)</li>
+					<li>
+						CreateProcess の current directory parameter に GetWindowsDir 
+						の結果を入れるように修正しました。(ABE Yasushi さん、バグレポートありがとうございました)</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2005/05/12">SNAPSHOT 2005/05/12</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20050512.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20050512.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20050512.tar.gz">ソース</a>)
+				<ul>
+					<li>
+					ImeSelect で unselect 時に MakeGuideInfo を呼び出していたために Swing アプリケーションの終了時 に Java.exe 
+					が hangup していました。GenerateMessage を実行するのに不適切な場所だったようです。</li>
+					<li>
+						ClientToScreen で返される Screen 位置では Swing アプリケーションの期待する座標とは異なるようで す。Swing 
+						アプリケーションにおいては lpIMC-&gt;hWnd が WS_CHILD を持たないために期待されている Client 
+						原点がずれているようです。GetWindowInfo を利用して、Window 原点を利用するように変更しまし た。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2005/03/29">SNAPSHOT 2005/03/29</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20050329.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20050329.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20050329.tar.gz">ソース</a>)
+				<ul>
+					<li>
+						[TSF] language bar の更新の通知は Text Service Framework 側から与えられる sink に OnUpdate 
+						をかけることで行うのが正しい 形だったのですが、それに気付かずに button を remove して insert する形で実行していました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2005/02/15">SNAPSHOT 2005/02/15</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20050215.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20050215.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20050215.tar.gz">ソース</a>)
+				<ul>
+					<li>
+					Annotation の中に ``['' が存在すると、その候補以降が表示されず選択できないバグを修正しました。</li>
+					<li>
+					Annotation の中に ``[]'' が存在した場合の辞書登録の問題を修正しました。Annotation 中の ``[]'' は concat 
+					に置き換えられません。また、annotation 中の ``/'' は ``／'' に置き換えられます。</li>
+					<li>
+					Annotation が最後の単候補表示される単語にかかっていた場合、複数候補表示状態から previous-candidate で戻った時に 
+					annotation が表示されないバグを fix しました。</li>
+					<li>
+						[TSF] Annotation の表示機能を追加しました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2004/12/08">SNAPSHOT 2004/12/08</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20041208.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20041208.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20041208.tar.gz">ソース</a>)
+				<ul>
+					<li>
+						Fix: ``suspended'' application problem (Windows2000 environment)</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2004/09/29">SNAPSHOT 2004/09/29</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20040929.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20040929.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20040929.tar.gz">ソース</a>)
+				<ul>
+					<li>
+					annotation の表示に tooltip を使うようにしました。
+					<li>
+						minibuffer 表示に折り返しをつけるようにしました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2004/03/17">SNAPSHOT 2004/03/17</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20040317.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20040317.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20040317.tar.gz">ソース</a>)
+				<ul>
+					<li>
+					cmnsrc.inc から NO_TSF=1 を削りました。</li>
+					<li>
+					uinotify.c で SetWindowPos を ShowWindow (SW_NOACTIVATE) の代わりに利用していたのですが、これが 
+					X-Mouse と相性が悪くなる原因のようでした。元に戻しました。</li>
+					<li>
+						[TSF] dai.h の中で target converted 側の guid を正しく設定していませんでした。そのため enum で失敗していました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2004/02/23">SNAPSHOT 2004/02/23</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20040223.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20040223.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20040223.tar.gz">ソース</a>)
+				<ul>
+					<li>
+					tsf.cpp の snap20040203 までの巻戻しました。</li>
+					<li>
+						cmnsrc.inc の Windows2000 build の時に NO_TSF が有効になるよう修正しました。問題は、Windows2000 
+						で通ってはいけない筈の tsf.cpp のコードが NO_TSF が有効になってないがために通ってしまっていたことです。それと tsf.cpp の修正 
+						(spinlock がまずったかな) の余波で Windows2000 で不具合が出ることになりました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2004/02/18">SNAPSHOT 2004/02/18</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20040218.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20040218.tar.gz">WindowsXP 
+					バイナリ</a>)
+				<ul>
+					<li>
+						uistate.c を 2004/0/03まで巻戻しました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2004/02/14">SNAPSHOT 2004/02/14</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20040214.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20040214.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20040214.tar.gz">ソース</a>)
+				<ul>
+					<li>
+					UpdateIndicIcon と UpdateLanguageBar の切り離し。</li>
+					<li>
+					ImeSelect の段階では ActivateLanguageBar のみ、UpdateLangugaeBar を呼び出さないように修正。</li>
+					<li>
+					ActivateLanguageBar の段階で TSF 側の button を remove するように修正。(この操作は間違っているかもしれない)</li>
+					<li>
+						status window の WM_ERASEBKGND で無効時の bitmap を Window に貼り付けるように修正。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2004/02/03">SNAPSHOT 2004/02/03</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20040203.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20040203.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20040203.tar.gz">ソース</a>)
+				<ul>
+					<li>
+					LiteStep など特定の application ないし shell と組み合わせた時に status window が無反応になる (NAKAMURA 
+					Toshikazu さん、バグレポートありがとうございます)、</li>
+					<li>
+						[TSF] 直接コード入力モードの2番目の menu で候補を選択する際のキーが正しく表示されない、</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/12/12">SNAPSHOT 2003/12/12</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20031212.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20031212.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20031212.tar.gz">ソース</a>)
+				<ul>
+					<li>
+					ユーザ辞書に unicode が使えるようになりました。単語登録の時に wcs2mbs で変換できない文字が存在した場合、そのまま unicode 
+					として扱います。が、unicode に一度するとそのままの筈の coding system が multibyte 
+					に戻ってしまう現象(バグ)が存在する気がします。調査中です。</li>
+					<li>
+						STATE ウィンドウが JISX0201 モードの時にボタンの press/release の変化がないバグの修正。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/11/22">SNAPSHOT 2003/11/22</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20031122.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-winxp-bin-snap20031122.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.0-win2kxp-snap20031122.tar.gz">ソース</a>)
+				<ul>
+					<li>
+					「辞書サーバからの応答に、半角カナが含まれていると、その部分がwになってしまう」バグを修正する&nbsp;Fumihiko MACHIDA さんの patch 
+					を当てました。(patch ありがとうございます)</li>
+					<li>
+						ゲーム専用モードを追加しました。</li></ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/10/31">SNAPSHOT 2003/10/31</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20031031.tar.gz">Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20031031.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20031031.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[TSF] 「▽モードでキー入力が変になる。チャタリングが起きたように見える」現象の解決。(composition text 
+					編集中に例外で落としてしまうと、こう見えるようです)</li>
+					<li>
+					[TSF] composition text が空の状態で「j-input-by-code-or-menu」を行い、Window を破棄すると 
+					minibuffer window が残ってしまうバグの修正</li>
+					<li>
+					[TSF] window を移動させた時に minibuffer window が追従するように修正。</li>
+					<li>
+					[TSF] keyboard close のタイミングで document を clear するよう修正。</li>
+					<li>
+						version.h の更新を忘れていたので、20031031 に修正。</li></ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/10/24">SNAPSHOT 2003/10/24</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20031024.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20031024.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20031024.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+						mozilla が落ちる現象の解決、具体的には ClauseLen に 8 を設定していたところを 0 に変更、です。Fakeime のコードが 8 
+						を入れているように見えたので、8 にあわせていたのですが、mozilla は ClauseLen が設定されていると AttributeLen 
+						を参照することなしに ClauseLen 分だけ Attribute を設定しようとしてアクセス違反を出してしまうようです (1.5b で確認)</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/10/22">SNAPSHOT 2003/10/22</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20031022.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20031022.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20031022.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[TSF] keyboard を open していないのに「かな」が入る。直接入力モードに修正できないバグの修正。</li>
+					<li>
+						[TSF] backspace で直前の文字まで消える、backspace を入れると一定時間刺さるバグの修正。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/10/18">SNAPSHOT 2003/10/18</a> (unstable) (<a href="arc/skkime/skkime1.0-win2k-bin-snap20031018.tar.gz">
+					Windows2000 バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20031018.tar.gz">
+					WindowsXP バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20031018.tar.gz">
+					ソース </a>)
+				<ul>
+					<li>
+					[TSF] Display Attribute のコードを書き直しました。きちんと CDisplayAttributeInfoInput, 
+					CDisplayAttributeInfoConverted を Heap に確保するようにしています。</li>
+					<li>
+						skkui.c を修正しました。設定値が正しくないように思えた点と結果の読みを入れてない点の修正です。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/10/14">SNAPSHOT 2003/10/14</a> (<a href="arc/skkime/skkime1.0-winxp-bin-snap20031014.tar.gz"> WindowsXP 
+					バイナリ </a>)
+				<ul>
+					<li>
+						Display Attribute Provider を無効にしたもの、それ以外は snap2003/10/12 と同じです。これで Yahoo! 
+						Messenger など Text Service Framework を利用した application が不意に落ちることがないかテスト中です。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/10/12">SNAPSHOT 2003/10/12</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20031012.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20031012.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20031012.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+						「再変換」を実行した時、IME が Open でない場合に IME を Open するように修正。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/10/07">SNAPSHOT 2003/10/07</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20031007.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20031007.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20031007.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					言語バーないし IME バーから入力モードを変更した時にゴミが入るバグの修正。</li>
+					<li>
+						[TSF]「IME を open した時にかなモードにする」設定が利かなくなっていたバグの修正。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/09/21">SNAPSHOT 2003/09/21</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030921.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030921.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030921.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					読み仮名の設定、</li>
+					<li>
+					[TSF] 入力/変換中のテキストの色、背景、下線の設定が反映されるよう修正。</li>
+					<li>
+					[TSF] IE の context menu に出る「IMEを開く」「IMEを閉じる」に対応。</li>
+					<li>
+					[TSF] 再変換で(選択されているにもかかわらず)空白のテキストを抜き出してしまうバグの修正。</li>
+					<li>
+					[TSF] 単語登録メニューを追加。</li>
+					<li>
+						[TSF] 入力切り替えを preserved-key によって実行するよう修正。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/09/03">SNAPSHOT 2003/09/03</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030903.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030903.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030903.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+						[TSF]「ASCIIモード」ないし「全英モード」で改行が入らないバグの修正。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/09/01">SNAPSHOT 2003/09/01</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030901.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030901.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030901.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					「ASCIIモード」ないし「全英モード」での j-newline で「かなモード」に戻るバグの修正。</li>
+					<li>
+					Text Service Framework 側を IME 側にあわせて修正(#4 変換、C-return などの修正)。</li>
+					<li>
+						WindowsXP + Word2000 で校正エンジンをインストールしていると、Word2000 
+						の終了時に例外が発生する現象への対処コードを追加。(テスト中)</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/08/27">SNAPSHOT 2003/08/27</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030827.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030827.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030827.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					「ASCIIモード」ないし「全英モード」から「\C-j」で「かなモード」に戻るようにしました。(今迄は「カナ」「jisx0201」が残っていました)</li>
+					<li>「C-return」が有効にならないバグを修正しました。(C-return にバインドがあれば、C-return が、なければ C-j になります)</li>
+					<li> j-zenkaku-henkan を実装しました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/08/24">SNAPSHOT 2003/08/24</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030824.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030824.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030824.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[add] 数値変換に #4 変換を追加。#4 変換が何か、については「最新情報」に用意しました。ただ #4 変換はまだチェック中です。あと、#4 
+					を複数書くと、その組み合わせの数だけ候補が爆発するという…事態になります。</li>
+					<li>
+						[fix] 間違っていた version.h を直しました。今度は snap20030824 と出る筈です。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/08/15">SNAPSHOT 2003/08/15</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030815.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030815.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030815.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[add] j-keyboard-quit の動作に「変換が active でない状態で入力中のテキストが存在する場合に、そのテキストをクリアする」を追加</li>
+					<li>
+						[fix] [skimic] annotation の処理を追加。今は annotation の表示を削るということだけをしています。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/08/09">SNAPSHOT 2003/08/09</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030809.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030809.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030809.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] 
+					候補選択モード(j-henkan-show-candidates-mode)で、数値変換を行っていると、本来は正しく数値に置き換えられているべきところが、# 
+					のまま表示されているバグ。</li>
+					<li>
+						[fix] 動作しなくなっていた、show-annotation を復元しました。と同時に j-henkan-show-candidates-mode では 
+						TOOLTIP を利用して表示するようにしてみました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/08/08">SNAPSHOT 2003/08/08</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030808.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030808.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030808.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] 辞書検索にタイミングによって失敗するバグを修正しました。</li>
+					<li>
+					[fix] ToggleIME をテキストを入力中でも有効にしました。</li>
+					<li>
+					[new] config dialog の 「Property for」の部分に build した日付を出すようにしました。</li>
+					<li>
+						[fix] ガイドウィンドウが単語選択ウィンドウ表示中にも有効になっているバグを修正しました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/08/04">SNAPSHOT 2003/08/04</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030804.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030804.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030804.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] [skkiserv] 未ソートファイル辞書の検索に失敗するバグを修正しました。</li>
+					<li>
+						[fix] [skimic] ToggleIME のキーバインドを有効にしました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/08/03">SNAPSHOT 2003/08/03</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030803.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030803.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030803.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] 辞書設定ダイアログでファイルのブラウズを開くと、一部の設定が勝手に disable になるバグを修正しました</li>
+					<li>
+						[仕様変更] ASCII モードと半角仮名モードの遷移を禁止して、「かな」「かたかな」モードとのトグルにしました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/07/27">SNAPSHOT 2003/07/27</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030727.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030727.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030727.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] skkiserv が起動されてない段階での pipe connection 待ちが、一切の wait なしだったので、Sleep(100) 
+					を実行する毎に pipe が作られているかチェックするように変更。</li>
+					<li>
+						[fix] Text Service Framework 側に ``ca'' で ``a'' が入るバグが残っていたので修正。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/07/25">SNAPSHOT 2003/07/25</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030725.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030725.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030725.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] j-henkan-show-candidates-mode 
+					から単語登録に入り、単語登録を行うと、j-henkan-show-candidates-mode から抜け出せず次のキー入力で落ちるバグを修正しました。</li>
+					<li>
+					[fix] WM_IME_KEYDOWN の WPARAM に仮想キーコードを正しく渡していないバグを修正しました。</li>
+					<li>
+					[fix] j-insert で該当するローマ字仮名テーブルのエントリがなかった場合の処理を「無限ループ回避」のために j-self-insert 
+					にしていたのですが、それだと「prefix を無効にしてもう一度テーブルをひく」ことができなくなるので、unprocess-char に戻しました。</li>
+					<li>
+						[fix] ImeDoc で keyfilter する際に一定回数以上までしか unread-event を見ないようにして、その回数を越えると 
+						unread-event をクリアするようにしました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/07/24">SNAPSHOT 2003/07/24</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030724.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030724.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030724.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] j-input-by-code-or-menu に入った時に「かな」モードになっているバグ。</li>
+					<li>
+					[fix] j-assoc-rule が機能しなくなっているバグ。</li>
+					<li>
+						[fix] skkiserv 及び IME 側の skkiserv 起動部分を snap20030715 当時まで rollback。そのため INF を 
+						"HKLM\Software\Microsoft\Windows\CurrentVersion\Run" から "skkiserv" 
+						を削るように修正しています。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/07/21">SNAPSHOT 2003/07/21</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030721.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030721.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030721.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] 間違えて消してしまった「IME を ON にした時に常にかなモードに戻す」checkbox を復元しました。</li>
+					<li>
+					[add] toggle-ime の機能を vc-toggle-eggnl という使われてない機能の代わりに用意しました。この機能が bind 
+					されたキーを押すと「変換動作中でなく」「何も入力してない」状態で IME の ON/OFF を切り替えることができます。</li>
+					<li>
+						[fix?] Windows2000 で漢字変換をしようとした直後に hangup するバグ…。pipe server である skkiserv と DLL 
+						client のタイミング依存の問題のようです。pipe を create するタイミングと WaitNamedPipe 
+						を実行するタイミングがまずいと、timeout するまで制御が戻らないことがあるようです。(無限待ちだとそのまま hangup) 細かな timeout 
+						を設定して (100ms 程度を10回 retry) 頻繁に見直してみるようにしてみました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/07/20">SNAPSHOT 2003/07/20</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030720.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030720.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030720.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] レジストリに設定が何も書かれていない時のデフォルトの初期化処理に含まれるバグを修正。</li>
+					<li>
+					[fix] keymap に設定不可能である筈の j-completion が混じっていたバグの修正。</li>
+					<li>
+					[fix] ASCII, 全角モードにおける改行機能を司る newline を追加。</li>
+					<li>
+					[fix] ガイドラインの表示設定を見るように修正。(IMC_SHOWGUIDELINE)</li>
+					<li>
+					[fix] context がセットされた時にガイドが存在すればガイドを表示するよう修正。</li>
+					<li>
+					[fix] 半角カナモードで「ー」が入力されてしまうバグを修正。</li>
+					<li>
+					[fix] default の composition window がサイズが拡大する方向にしか resize せず、また余白にゴミが表示されるバグを修正。</li>
+					<li>
+					[fix] roma-kana-table が存在しない時に j-insert を呼び出すと無限ループに陥るバグを修正。</li>
+					<li>
+					[fix] skkiserv の引数に -startup を指定すると、default の keymap が SKKIME 
+					の時にだけ起動するように変更。これで HLKM の Run に skkiserv を指定可能。</li>
+					<li>
+						[fix] skk-process-okuri-early, skk-delete-okuri-when-quit, skk-kakutei-early 
+						の設定を可能に。また再帰変換のコントロールを削除。ガイドを利用した段階で不要だったので。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/07/15">SNAPSHOT 2003/07/15</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030715.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030715.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030715.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] IME と Text Service Framework の連携部分の修正。恐らくは、これで IME 側の作業は終了。まずかった点は「IME 
+					のボタンと TSF のボタンは同じ GUID を持ってはいけない」「CLSID はキーボード(ボタン)と同じものを利用しないといけない」を破っていたこと。</li>
+					<li>
+					[fix] skkFlushTextSub で不自然な message を発行していたのを修正。</li>
+					<li>
+					[fix] 動かなくなっていた言語バーの設定ダイアログを復旧。</li>
+					<li>
+						[skimic] [add] DisplayAttributeProvider のコードを追加。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/07/13">SNAPSHOT 2003/07/13</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030713.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030713.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030713.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] application を stack overflow で落とすバグを修正。NotifyIME の中の ContextUpdated から 
+					GenerateMessage を呼び出すのは正しい動作ではないようです。</li>
+					<li>
+						[fix] CPS_COMPLETE, CPS_CANCEL が Composition String がなければ WM_IME_XXX 
+						を発行しないように修正。無闇に発行すると region 選択されたテキストが消えてしまいます。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/07/11">SNAPSHOT 2003/07/11</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030711.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030711.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030711.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] ▽モードで special character (&gt;,&lt;,?) を入力すると確定(しかも▽マークが残る)してしまうバグを修正しました。</li>
+					<li>
+					[fix] キー割り当てダイアログを表示すると落ちるバグを修正しました。</li>
+					<li>
+					[fix] C-@ のキー割り当てを変更すると、C-@ の行が2つになるバグを修正しました。また、同じようなバグが他のダイアログにも存在したので修正しました。</li>
+					<li>
+					[fix] 半角仮名変換で「わ」が変換できないバグを修正しました。</li>
+					<li>
+						[fix] 直接文字入力モード、変換候補表示モードで j-keyboard-quit 
+						が割り当てられているキーを押すと、処理を抜けるように修正しました。(以前は 0x07 に決め打ち)
+					</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/07/10">SNAPSHOT 2003/07/10</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030710.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030710.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030710.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] 平仮名変換、片仮名変換が動作しない、「ぁ」「ァ」が変換できないバグを修正しました。</li>
+					<li>
+					[fix] IMC_SETSTATUSWINDOWPOS が動作するように修正しました。</li>
+					<li>
+					[fix] IMN_SETCOMPOSITIONWINDOW が届くと、Guide の位置も移動させるように修正しました。</li>
+					<li>
+					[skimic] Text Service Framework 側で Reconversion が動作するようにしました。</li>
+					<li>
+						[skimic] Text Service Framework 側にも平仮名変換、片仮名変換が動作しないというバグがあったので修正しました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/07/07">SNAPSHOT 2003/07/07</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030707.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030707.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030707.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					変換エンジンを skimic 側から port しました。</li>
+					<li>
+					[add] ImeConversionList を実装しました。</li>
+					<li>
+					[add] minibuffer window を guide として実装するように変更しました。</li>
+					<li>
+					[fix] NotifyIME の NI_CONTEXTUPDATED において IMC_SETCANDIDATEPOS から 
+					IME_SETOPENSTATUS までを見るように修正しました。とはいえ、WM_IME_NOTIFY 
+					を投げるコードがほとんどです。(これが正しい実装なのかは不明です)</li>
+					<li>
+					[fix] NotifyIME の Candidate List 操作 を変換エンジンと同期するように修正しました。</li>
+					<li>
+					[fix] skkiserv 待ち (WaitNamedPipe) を無限待ちでは帰って来ないことがあるので 300ms に変更しました。</li>
+					<li>
+					[fix] NotifyIME の NI_COMPOSITIONSTR の CPS_COMPLETE から CPS_REVERT までの処理を実装しました。</li>
+					<li>
+					[fix] レジストリから設定ファイルを読み込むタイミングを ImmSetActiveContext の時点に変更しました。</li>
+					<li>
+						辞書検索を逐次に変更しました(候補リストの一覧が出るまでは)。local で hit すると network 越しに skkserv を見るよりは軽い筈です。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/06/24">SNAPSHOT 2003/06/24</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030624.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030624.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030624.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] j-start-henkan で変換モードになければ、j-input-vector を見るように変更。</li>
+					<li>
+					[add] IME を Open すると「かなモード」に戻る機能 + 設定を追加。</li>
+					<li>
+						[fix] [TSF] 片仮名変換で「ぁ」が変換できないバグを修正。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/06/18">SNAPSHOT 2003/06/18</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030618.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030618.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030618.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] [TSF] 送り仮名変換でサーバ辞書以外の検索をしないバグを修正。</li>
+					<li>
+					[fix] [TSF] 詳細なテキストサービスを有効にする、をチェックしないと有効にならないバグを修正。(確認中)</li>
+					<li>
+						[fix] 直接コード入力の最初のメニューと次のメニューの間で表示がずれるバグを修正。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/06/15">SNAPSHOT 2003/06/15</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030615.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030615.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030615.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] [TSF] 辞書検索の結果、最初の候補が「空白だけ」になるバグを修正。</li>
+					<li>
+					[fix] [TSF] prefix が残っている時に unused-event が戻らないバグを修正。具体的には「お」の次の backspace や 
+					cursor が利かないバグの修正です。</li>
+					<li>
+						[fix] [TSF] keyboard icon を消しました。標準の横向きキーボードを使います。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/06/04">SNAPSHOT 2003/06/04</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030604.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030604.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030604.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>[fix] skimic.dll が regsvr32 で失敗するバグの修正。vc6 で build し直しました。</li>
+                    <li>[fix] XP 版の inf file に skimic.dll の行を追加するのを忘れていました。</li>
+					<li>[fix] 補助辞書はソートされている、のチェックの動作が変だったのを修正しました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/06/01">SNAPSHOT 2003/06/01</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030601.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030601.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030601.tar.gz">ソース </a>
+				)
+				<ul>
+					<li> [fix] 特定のアプリケーション(例、explorer のファイル名変更時)で改行キーが入らないバグを修正。</li>
+					<li> [add] skimic に beginning-of-line, end-of-line, yank, kill-region, kill-line を追加。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/05/29">SNAPSHOT 2003/05/29</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030529.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030529.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030529.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] j-newline などキーを IME で処理しない時に SHIFT や CONTROL のマスクが落ちる現象の解決。</li>
+					<li>
+						[add] skimic に lisp 変換と Menu 操作による Conversion Mode の変更を追加。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/05/28">SNAPSHOT 2003/05/28</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030528.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030528.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030528.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] j-input-by-code-or-menu-jump1 に入った瞬間に x 
+					キーで前の候補へ戻ると化け候補になる、別の候補を表示しても選択した候補が入力できないというバグを修正しました。</li>
+					<li>
+					[fix] conf*.c の中の KEY_READ, KEY_WRITE で open していたレジストリキーを KEY_READ だけで open 
+					するように修正しました。</li>
+					<li>
+					[fix] skkiserv と通信するための pipe name を作成する場所を DLL load 
+					時点に変更しました。(固定なので毎回作成する必要はなかったですから)</li>
+					<li>
+					[fix] skkiserv と通信するための named pipe を NULL security attribute 
+					で作成するように変更しました。(今迄は public)</li>
+					<li>
+						[add] <a href="#TSF">skimic.dll (XP のみ) を追加しました。Text Service Framework 用です。</a></li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/05/13">SNAPSHOT 2003/05/13</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030513.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030513.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030513.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+						[fix?] skkiserv の start を skkimeOpenPipe に失敗した時に変更しました。取り敢えずテスト(様子見)中です。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/05/04">SNAPSHOT 2003/05/04</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030504.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030504.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030504.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+						[fix] logoff 時に「application の起動に失敗しました」と dialogbox が出る bug を fix しました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/04/28">SNAPSHOT 2003/04/28</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030428.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030428.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030428.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] Windows2000 で logoff に非常に時間がかかる現象を解決しました。</li>
+					<li>
+						[fix] WindowsXP/2000 の言語バーでボタンが押せない状況の表示を TF_STATUS_DISABLE を利用するように修正しました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/04/23">SNAPSHOT 2003/04/23</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030423.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030423.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030423.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+						[fix] Excel2000 で最初の1文字(子音)を入力した時に2文字入ってしまうバグの修正</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/04/21">SNAPSHOT 2003/04/21</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030421.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030421.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030421.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] 言語バーが有効な時に Status Window を作成しない。</li>
+					<li>
+					[fix] 一般の設定(confgene.c) で RegOpenKey の後、RegCloseKey を行っていないバグを修正。(TOYAMA Sumio 
+					さん、情報の forward ありがとうございます。2ch の指摘して下さった方、ありがとうございます)</li>
+					<li>
+					[fix] 辞書設定においてサーバ辞書の追加を選択後、サーバを追加、追加、削除を行うと OK 選択後サーバ辞書が追加されない。</li>
+					<li>
+						[fix] command prompt において現在の conversion mode が更新されなくなっていた。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/04/16">SNAPSHOT 2003/04/16</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030416.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030416.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030416.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] 言語バーのアイコンの表示設定を追加した時に、その設定の UPDATE の成功失敗を返す変数の初期化を忘れるという失敗をしていました。このために 
+					skkiserv 側に設定の変更が通知されなくなっていました。</li>
+					<li>
+						[fix] 辞書の検索順序設定で「辞書の追加」を行った時、実際の検索順序と表示位置がずれるバグの修正。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/04/12">SNAPSHOT 2003/04/12</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030412.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030412.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030412.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					言語バーに表示されるアイコンの表示/非表示設定ができるようにしました。また、キーボードアイコンを利用するようにしました。</li>
+					<li>
+					言語バーのアイコン表示のカスタマイズ用 dialog box を作成しました。Windows2000 
+					での動作が今一つ良くないので単体アプリケーションとして切り出して、テストする必要があります (TODO)</li>
+					<li>
+					入力ベクトルを編集すると、以前の候補が残るバグを修正しました。</li>
+					<li>
+						ImmSetConversionStatus 
+						が機能するように修正しました。言語バーからの設定で「JISX0201」から「かな」への切り替えが腐っていた問題も、これで修正されていると思います。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/03/24">SNAPSHOT 2003/03/24</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030324.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030324.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030324.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] WindowsXP 環境でテキストを入力しようと瞬間落ちるバグを修正。</li>
+					<li>
+					[fix?] 言語バーのアイコンに優先順位をきちんと設定しました。これで二重にアイコンが出る現象が出なくなれば良いのですが。(手元試験中)</li>
+					<li>
+						[fix] 言語バーを最小化した時に「追加アイコンを表示する」にチェックが入っていなくても、タスクバーにアイコンが表示されるようにしました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/03/19">SNAPSHOT 2003/03/19</a> (unstable)
+				<ul>
+					<li>
+					フォルダを削除した時などに固まるバグに対処しました。言語バーの処理の排他制御に TIMEOUT を追加しています。</li>
+					<li>
+						言語バーにアイコンが2重に出るバグに対処療法ですが対応しました。単純にアイコンの登録削除の順番を変更して、2重に出る側を操作しないようにしただけ…ですが。MSIME 
+						が実際にどのような作業を行っているのか、また Text Service Framework Aware Application 
+						との切り替え時に発生することが多いのは正しいのか、確認中です。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/03/08">SNAPSHOT 2003/03/08</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030308.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030308.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030308.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] snap20030307 で直っていなかった ``set-mark-command (\C-SPC, \C-@) 及び j-prefix-char 
+					(\C-c) を Composition String が入ってない状況で食べていたバグ'' を修正。</li>
+					<li>
+						[add] 言語バーに表示される入力モードのアイコンの文字色を黒/白、自動判別するように修正。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/03/07">SNAPSHOT 2003/03/07</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030307.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030307.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030307.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] set-mark-command (\C-SPC, \C-@) 及び j-prefix-char (\C-c) を Composition 
+					String が入ってない状況で食べていたバグを修正。</li>
+					<li>
+					[fix] INIT_COMPFORM の時点で default の composition form を変更。default の IME に設定した時に 
+					emacs (素の VC build)で IME を使った時に UICOMP Window が変な位置に出なくなりました。</li>
+					<li>
+						[add] configuration dialog の設定で recursive-edit を止められるようにしました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/03/04">SNAPSHOT 2003/03/04</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030304.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030304.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030304.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] 非初期化処理が ImeDestroy は間違い。DllMain の中に移動。ただし、LanguageBarItemMgr を得ると 
+					application が終了時に例外を出すようになるので、その部分だけは外す。</li>
+					<li>
+						[fix] ImeSelect の中に初期化処理を移動。ただし、非初期化処理が ImeSelect には入れれない(Mozilla が落ちる)ので、TRUE 
+						だった時の最初の一回だけ初期化を行い、それ以降は ActivateLanguageBar のみを行うように修正。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/03/03">SNAPSHOT 2003/03/03</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030303.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030303.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030303.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] Text Service Framework の初期化処理を skki1_0.c の中に、非初期化処理を ImeDestroy 
+					の中に移動させました。これで正しく動いて欲しいところですが。</li>
+					<li>
+					[fix] 直接コード入力を通常の変換と同様 CANDLIST を使うように修正しました。</li>
+					<li>
+						[fix] SKK モードでの文字入力を GCS_RESULT を使うように修正しました。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/02/13">SNAPSHOT 2003/02/13</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030213.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030213.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030213.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+						[fix] imm.c の中の lpIMC != NULL の中に Text Service Framework の初期化/非初期化処理を移動。前回の 
+						snapshot ではその外に出してしまっていたのですが、これが多少不安定さを呼んでいたように思います。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/02/02">SNAPSHOT 2003/02/02</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030202.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030202.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030202.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] snap20030201 では完全に fix できていなかったので再度、Text Service Framework 
+					の初期化/非初期化位置の調整を行いました。引き続きテスト中です。</li>
+					<li>
+						[fix] completion の順序を直す時に移動させる先が間違っていたので修正。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/02/01">SNAPSHOT 2003/02/01</a> - unstable (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030201.tar.gz">
+					Windows2000 バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030201.tar.gz">
+					WindowsXP バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030201.tar.gz">
+					ソース </a>)
+				<ul>
+					<li>
+					[fix] OfficeXP のインストールされている Windows2000 もしくは WindowsXP において default の IME 
+					とすると、process の終了時に「read エラー」が発生するようになるバグを修正。(完全に fix できたか確認中)</li>
+					<li>
+						[fix] completion の順序が「確定」しても変化しないバグを修正。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/01/30">SNAPSHOT 2003/01/30</a> - unstable (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030130.tar.gz">
+					Windows2000 バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030130.tar.gz">
+					WindowsXP バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030130.tar.gz">
+					ソース </a>)
+				<ul>
+					<li>
+					[fix] 言語バーの細かな実装のバグの修正。例えば、メニューのチェックの位置がいい加減であること、直接入力が選べないこと、同一プロセスで IME を 
+					MS-IME に戻した時に言語バーに ICON が残ること、ツールボタンがないこと、です。</li>
+					<li>
+						[fix] skkiserv のサーバ辞書の検索が 512 バイト分しか skkserv 
+						から受信しないという駄目な作りだったのですが(それで足りると思っていました)、町田さんが patch を送って下さいました。ありがとうございます。m(_ 
+						_)m
+					</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/01/27">SNAPSHOT 2003/01/27</a> - unstable (<a href="arc/skkime/skkime1.0-winxp-bin-snap20030127.tar.gz">
+					WindowsXP バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030127.tar.gz">
+					ソース </a>)
+				<ul>
+					<li>
+						[add] 言語バーの対応。ただし、tsf.cpp はかなり腐ってます。書き直さなければ。また、言語バーの対応のために MSVCRT を link
+						してしまっています。その副作用は不明です。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/01/16">SNAPSHOT 2003/01/16</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030116.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030116.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030116.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] Annotation Window が頻繁に Show/Hide を繰り返す現象を抑制。</li>
+					<li>
+					[fix] Annotation Window が Candidate Window に従って移動するよう修正。</li>
+					<li>
+						[fix] Composition Window がちらつく現象を緩和。(WM_ERASEBKGND を奪っただけです)
+					</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/01/13">SNAPSHOT 2003/01/13</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030113.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030113.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030113.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+						[add] annotation の表示機能を追加。annotation 付きの L 辞書も利用可能になりました。ただし、この機能は(激しく)テスト中です。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/01/11">SNAPSHOT 2003/01/11</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030111.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030111.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030111.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+						[fix?] サーバ辞書の検索時に「直前の検索結果」を引くことがあるバグに対処。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/01/10">SNAPSHOT 2003/01/10</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030110.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030110.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030110.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+						[add] 色設定ダイアログを実装。未変換文字列と変換文字列の2つしかありませんが…。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/01/03">SNAPSHOT 2003/01/03</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030103.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030103.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030103.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] ソート済み辞書の検索ができないバグを修正(動作確認中)。Release Build した skkiserv.exe 
+					に発生するバグだったため、Debug Build で使い続けていた(テストが甘い)ため、確認 &amp; 再現が遅れました。</li>
+					<li>
+					[fix] 将棋変換で最初の1文字目が化けるバグを修正。</li>
+					<li>
+						[fix] 辞書設定の更新などレジストリの値を更新する時に前回までの設定を消去していたのですが、RegEnumValue + RegDeleteValue 
+						で列挙し切れてない (Flush の問題かな) ことに気付きましたので、RegDeleteKey でキーごと消去するように変更。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/01/02">SNAPSHOT 2003/01/02</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030102.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030102.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030102.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] Config Dialog の辞書の検索リストで「辞書を削除」しても「更新」が有効にならないバグを修正。</li>
+					<li>
+						[fix] Config Dialog で「更新」「OK」を押して skkiserv に検索辞書の変更を通知した時、skkiserv 
+						が今迄持っていた検索辞書の情報を捨てずにいるバグを修正。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2003/01/01">SNAPSHOT 2003/01/01</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20030101.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20030101.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20030101.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] 「再変換」を行った時に IME が Open されてなかったら Open し、仮名モードでなかったら仮名モードにしてから、Composition 
+					String を設定するように修正。</li>
+					<li>
+						[fix] Outlook Express で "s" space の順番に入力すると、"s" が残る現象が発覚(仮名プレフィクスが消えない)。ところが 
+						Notepad では再現しない。Result String が space だと何かあるようなので、Result String が space 
+						のみの場合にはキーとして返すように変更。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2002/12/25">SNAPSHOT 2002/12/25</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20021225.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20021225.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20021225.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[change] skkiserv が skkserv との connection を維持するように修正。</li>
+					<li>
+						[fix] サーバ辞書に対する補助辞書の設定が無効になっていたのを修正。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2002/12/15b">SNAPSHOT 2002/12/15b</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20021215b.tar.gz">
+					Windows2000 バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20021215b.tar.gz">
+					WindowsXP バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20021215b.tar.gz">
+					ソース </a>)
+				<ul>
+					<li>
+						[fix] WM_IME_SETCONTEXT で表示するよう設定されてない Window が表示されてしまうバグ。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2002/12/15">SNAPSHOT 2002/12/15</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20021215.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20021215.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20021215.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix?] 単語登録モードで [ALT-漢字] により入力を中止すると、次に IME による入力開始時にアプリケーションが落ちるバグ (テスト中)</li>
+					<li>
+					[fix] 設定ダイアログで右クリックメニューが利かなくなっていた。</li>
+					<li>
+					[fix] 辞書設定ダイアログで[削除]ボタンを有効に。</li>
+					<li>
+						[fix] / の入っている候補に対して completion が働かない。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2002/12/01">SNAPSHOT 2002/12/01</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20021201.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20021201.tar.gz">WindowsXP 
+					バイナリ </a>/ ソース)
+				<ul>
+					<li>
+						[add] 再変換の機能を追加。ただし、MAKEREAD 及び CPS_REVERT はまだ動かない。また逆変換の機能もない。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2002/11/30">SNAPSHOT 2002/11/30</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20021130.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20021130.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20021130.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+						[add] Ime の設定に「全般」を追加。egg-like-newline, delete-implies-kakutei 
+						などの設定が可能になった。「色設定」も追加されているが、こちらはまだ動かない。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2002/11/29">SNAPSHOT 2002/11/29</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20021129.tar.gz"> Windows2000 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-winxp-bin-snap20021129.tar.gz">WindowsXP 
+					バイナリ </a>/ <a href="arc/skkime/skkime1.0-win2kxp-snap20021129.tar.gz">ソース </a>
+				)
+				<ul>
+					<li>
+					[fix] Excel (office2000) で利用した場合、Default の Ime に設定していると、Default Window 
+					が表示されてしまうバグ。</li>
+					<li>
+					[fix] Visual Studio で build した Emacs で利用すると、入力中のテキストが表示されなくなるバグ。</li>
+					<li>
+					[fix] skkime が active になっていると Escape などのキーがテキストを入力中でないにも関わらず application 
+					へ渡らなくなるバグ。</li>
+					<li>
+						[fix] .skk-jisyo を読ませた時に skk の送り変換の項目を変換結果候補としてしまうバグ。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2002/11/06">SNAPSHOT 2002/11/06</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20021106.tar.gz">実行形式</a>
+				/ <a href="arc/skkime/skkime1.0-win2k-snap20021106.tar.gz">ソース</a>)
+				<ul>
+					<li>
+						[fix] system ユーザで skkiserv.exe を起動してしまうバグ。標準の ime 
+						に設定した時に辞書の検索が一切できなくなる現象として現れる。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2002/11/01">SNAPSHOT 2002/11/01</a> (<a href="arc/skkime/skkime1.0-win2k-bin-snap20021101.tar.gz">実行形式</a>
+				/ <a href="arc/skkime/skkime1.0-win2k-snap20021101.tar.gz">ソース</a>)
+				<ul>
+					<li>
+					[fix] now を変換すると (current-time-string) で skkiserv.exe が落ちるバグ。</li>
+					<li>
+					[fix] completion で「▽あ」から TAB を打つと「あ▽」のようになるバグ。</li>
+					<li>
+						[fix] 設定 dialog で browse button を有効に。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2002/10/31b">SNAPSHOT 2002/10/31b</a> (<a href="arc/skkime/skkime1.0-win2k-bin-SNAP20021031b.tar.gz">実行形式</a>
+				/ <a href="arc/skkime/skkime1.0-win2k-SNAP20021031b.tar.gz">ソース</a>)
+				<ul>
+					<li>
+					[fix] サーバ辞書への接続がタイムアウトすると、skkiserv.exe が異常終了する。</li>
+					<li>
+					[fix] レジストリに登録するパスが間違っていた。</li>
+					<li>
+						[fix] 直接コード入力が動作しなくなっていた。</li>
+				</ul></li>
+			<li>
+				<a id="changelog-skkime1.0-2002/10/31">SNAPSHOT 2002/10/31</a> (<a href="arc/skkime/skkime1.0-win2k-bin-SNAP20021031.tar.gz">実行形式</a>
+				/ <a href="arc/skkime/skkime1.0-win2k-SNAP20021031.tar.gz">ソース</a>)
+				<ul>
+					<li>
+					すみません。昨日の snapshot はゴミです。すぐに捨てて下さい。多少、まともに動くように修正したものがこの 2002/10/31 です。</li>
+					<li>
+						突貫工事で skkinput3 から lisp-eval の code を移動させました。</li>
+				</ul>
+			</li>
+			<li>
+				<a id="changelog-skkime1.0-2002/10/30">SNAPSHOT 2002/10/30</a> (<a href="arc/skkime/skkime1.0-win2k-bin-SNAP20021030.tar.gz">実行形式</a>
+				/ <a href="arc/skkime/skkime1.0-win2k-SNAP20021030.tar.gz">ソース</a>)
+				<ul>
+					<li>
+					辞書のセーブは logout 時に自動にするように変更。(まだ動作はきちんと確認されていません)</li>
+					<li>
+						この snapshot はかなり危険です。人柱覚悟になるかと思われます。</li>
+				</ul></li>
+		</ul>
+		
+<hr />
+    <p>
+        <strong>[更新履歴(for 1.5)]</strong></p>
+
+		<ul>
+		    <li><a id="changelog-skkime1.5-2010/07/19">SNAPSHOT 2010/07/19</a>
+		    <ul>
+		    <li>[tsf] 下2つの Compartment の修正は #ifdef ～ #endif の条件判定にそもそも間違いがあり(GUIDがマクロではない)、takayama tomoyaさんのpatchによりdisableしました。</li>
+		    <li>[tsf, ime] skk-set-henkan-point から skk-kana-input へ last-command-char が渡される段階で「大文字から小文字に自動的に変換していた」のですが、変換ルールが存在する場合には大文字のまま渡すように修正しました。</li>
+		    </ul>
+		    </li>
+		    <li><a id="changelog-skkime1.5-2010/01/30">SNAPSHOT 2010/01/30</a>
+		    <ul>
+		    <li>[tsf] Compartmentのコード追加で抜け落ちていた言語バーの update を追加しました。</li>
+		    <li>[skkiserv] ソート済み辞書を MapViewOfFile していたのを止めて、ReadFile で該当する場所だけを読み出すように変更しました。</li>
+		    <li>[tsf] toggle/on/off のキー登録を keyfunction を見るように変更しました。</li>
+		    </ul>
+		    </li>
+		    <li><a id="changelog-skkime1.5-2009/11/01">SNAPSHOT 2009/11/01</a>
+		    <ul>
+		    <li>[tsf] Compartment のコードを追加して、Vista, Windows7 において Imm Interface が動作するように修正しました。</li>
+		    <li>[ime, tsf] kana-prefix が確定操作(defaultでは \C-j)で消えるように修正しました。</li>
+		    </ul>
+		    </li>
+		
+		    <li><a id="changelog-skkime1.5-2009/07/15">SNAPSHOT 2009/07/15</a>
+		    <ul>
+		    <li>[skkiserv] ユーザ辞書に登録する際、Annotationパートに禁止文字が含まれた場合の処理が全体をconcatで包むという形であったために、concatされているエントリ全体をconcatするというおかしなことになっていました。Annotation部分と分けてconcatするように修正しました。(palellamaさん、バグレポートありがとうございます)</li>
+		    <li>[tsf] ToggleIme の処理に「かな」モードに戻す部分が抜けおちていたので追加しました。</li>
+		    <li>[tsf] Annotationパートが lisp 式かどうかのチェックをしていなかったので追加しました。</li>
+		    <li>[ime] Annotationパートが lisp 式だった時に一覧表示以前の状態で表示すると、Annotationではなく単語そのものが表示されるバグを修正しました。</li>
+		    </ul>
+		    </li>
+		    <li><a id="changelog-skkime1.5-2009/07/04">SNAPSHOT 2009/07/04</a>
+		    <ul>
+		    <li>[skkiserv] JISX0213-2004 の第一面の変換テーブルに"Ｑ"とあるべきところが"Ｐ"が入っているバグがありましたので、修正しました。(palellamaさん、バグレポートありがとうございます)</li>
+		    <li>[skkiserv] ソート済み辞書の ";; okuri-ari entries." や ";; okuri-nasi entries." の一致判定の後 EOL までスキャンしてないことが原因で最初のエントリをスキップしていました。</li>
+		    </ul>
+		    </li>
+		    <li><a id="changelog-skkime1.5-2009/06/28">SNAPSHOT 2009/06/28</a>
+		    <ul>
+		    <li>[ime] 候補リストを入れる構造体に内部コードのまま入れるという失敗をしていました。WCHARに直しました。</li>
+		    <li>[tsf] Windows の update 状況によって、改行が2重に入るバグを修正しました。KeyDown 処理の Eaten 設定が動作する時と動作しない時があり、動作する時に2重に入るコードを書いていました。</li>
+    		<li>[tsf] 句読点の入力でゴミが入るバグを修正しました。nul文字終端を忘れるという(ひどい)ミスです…。</li>
+		    <li>[skkiserv] ソート済み辞書で最後のエントリ(例えば、ワ行)を検索すると落ちるバグを修正しました。バッファの探索終了位置の設定でミスをしていました。(palellamaさん、バグレポートありがとうございます)</li>
+		    <li>[skimconf] Minibufferフォントの設定を可能にしました。ただ、スタイルの設定が…しても意味がないけれども、設定できるようになっています…。</li>
+		    </ul>
+		    </li>
+		    <li><a id="changelog-skkime1.5-2009/06/18">SNAPSHOT 2009/06/18</a>
+		    <ul>
+		    <li>[skkiserv] henkan-okuri-strictly の動作を正す patch を Hiro Aida さんから頂きましたので、patch をあてました。(Hiro Aidaさん、patchありがとうございました)</li>
+		    <li>[tsf, ime] JIS0213-2004 に対応しました。これにより、内部の Unicode が 24bit 扱いになっています。また Unicode と ISO-2022-JP-4, EUCJP-2004 の対応表を更新しました。(palellamaさん、レポートありがとうございます)
+		    (※SURROGATE PAIRには対応したのですが、合字についてはどういう仕様にしたものか何も手を打てていない状況です)</li>
+		    <li>[tsf] Windows Mailer/Outlook Expressで kana-prefix の途中から space を押すと kana-prefix が残るバグを修正しました。EditSession を非同期にして、一度テキストを消す、それからテキストを設定する、を実行すると消せるようです。
+		    ただし、これを常に行うと1文字打つ毎に文字全体がちらつくので、アルファベットだけが composition string である時にのみという条件を追加しています。</li>
+		    <li>[tsf, ime] 変換候補表示、ミニバッファ表示のフォントを Windows の Message Font にあわせました。これは SystemFont だと JISX0213-2004 で追加された文字が表示されないためです。ただ、そうすると文字が小さすぎる(時もある)ので
+		    レジストリによって修正できるようにしました…。</li>
+		    <li>[tsf, ime, skimconf] ローマ字かなルールにエラーがあった場合、エラー箇所だけを読み飛ばすようにしました。前回は1つでもエラーがあると全てキャンセルして、結果ルールが存在しないということになっていました。
+		    また、エラー箇所を表示するようにしました。(Hidetoshi MIZUMOさん、バグレポートありがとうございます)</li>
+		    <li>[skimconf] 全角ベクトルを設定すると落ちるバグを修正しました。(Matsuiさん、バグレポートありがとうございます)</li>
+		    <li>[skimconf] 全角ベクトル、ローマ字かなルールにおいて default にしてから変更を押すと、default のルールをもとに dialog を開くように変更しました。リセットが簡単に行えるように、です。
+		    この時、ok を押すと customize された項目が消えてしまうので注意して下さい。</li>
+		    <li>[tsf, ime, skimconf] Default のローマ字かなルールに "mm" のエントリが欠けていたので、追加しました。</li>
+		    </ul>
+		    </li>
+		    <li><a id="changelog-skkime1.5-2009/04/23">SNAPSHOT 2009/04/23</a>
+		    <ul>
+		    <li>skkiserv.exe で文字コードの変換に WideCharToMultiByte, MultiByteToWideChar を利用しているのですが、CodePage を OEM CodePage に指定していたため、日本語がデフォルトでない状態では文字コード変換に失敗していました。</li>
+		    <li>[ime] UICOMP.C で DefaultWindow を移動させるコードがその必要もないのに呼び出されていましたので、修正しました。</li>
+		    <li>[ime] UICOMP.C で DefaultWindow を移動させるコードの中で SetWindowPos を利用していたので削除しました。これで Window を TOPMOST にする操作は X-Mouse と相性が悪いです。(Satoshi Fukutomiさん、SAITO Shukakuさん、バグレポートありがとうございます)</li>
+		    <li>[tsf] tooltip と candidate list の Window 表示で SetWindowPos を利用していたので削除しました。</li>
+		    <li>[tsf] compose の terminate 処理で変換動作の内部状態を保持するように変更しました。(以前は完全にクリアしていました)</li>
+		    <li>[tsf] thread に focus が戻った時に変換動作の内部状態を見て、ITfContextやWindowを復元するように変更しました。</li>
+		    </ul>
+		    </li>
+		    <li><a id="changelog-skkime1.5-2009/01/18">SNAPSHOT 2009/01/18</a>
+		    <ul>
+		    <li>[tsf, ime] 注釈テキストをバッファ残りを見ずにコピーしているバグが存在しました。このため辞書の候補が一定数を超えると自動的にヒープが破壊され、時にアプリケーションクラッシュします。</li>
+		    <li>[tsf, ime] 送り仮名変換から keyboard-quit して、通常の仮名変換を行った時に okuri-char が初期化されず、その結果続けての変換が自動的に送り仮名変換と解釈されていました。初期化するように修正しました。</li>
+		    <li>[ime] Composition Window の位置を CFS_FORCE_POSITION なしに Window の外に移動させようとした場合、強制的に Default Window 表示に切り替えるようにしました。これはメイフマスターズの名前入力に対する MS-IMEの挙動を見ての修正です。</li>
+		    </ul>
+		    </li>
+		    <li><a id="changelog-skkime1.5-2008/11/07">SNAPSHOT 2008/11/07</a>
+		    <ul>
+		    <li>[tsf] Candidate/ToolTip WindowのTOPMOST属性が消える瞬間が存在するようなので、Focusが当たる都度TOPMOSTを再設定するように修正しました。(IWAMURO Motonoriさん、バグレポートありがとうございました)</li>
+		    <li>[tsf] キーマップの設定をレジストリから反映していないバグを修正しました。これによりfunction 2などの割り当てがTSFで使えるようになった筈です。</li>
+		    <li>[tsf, ime] 句読点ペアのdecodeに失敗するバグを修正しました。</li>
+		    <li>[tsf, ime] 句読点ペアを修正するとskimconf.exeが落ちるバグを修正しました。</li>
+            <li>[tsf, ime] レジストリからカスタム設定の句読点ペアが読み込めないバグを修正しました。(Keisuke URAGOさん、バグレポートありがとうございました)</li>
+		    </ul>
+		    </li>
+		    <li><a id="changelog-skkime1.5-2008/07/21">SNAPSHOT 2008/07/21</a>
+		    <ul>
+		    <li>[ime] IDIM_CMODE と IDM_CMODE の混在により、メニュー操作が正しく行われないバグを修正しました。</li>
+		    <li>[tsf, ime] keyboard-quit, abort-recursive-edit に delete-okuri-when-quit のコードが実装されていなかったので、実装しました。(Takuya Yamabeさん、バグレポートありがとうございました)</li>
+		    <li>[tsf, ime] skk-process-okuri-early の時、送り仮名があるかどうかの判定を skk-okurigana が t/nil によって判定していたのですが、skk-okuri-char があるかどうかに修正しました。(Takuya Yamabeさん、バグレポートありがとうございました)</li>
+		    <li>[tsf, ime] skk-process-okuri-early の時、確定した候補をユーザ辞書に渡す時、送り仮名がアルファベットのままになる(本当の送り仮名が分からないので)ので、送り仮名を渡さないように修正しました。</li>
+		    <li>[tsf, ime] skk-process-okuri-early の時、送り仮名ありの変換を行うと kana-prefix が残された状態で変換が可能になるのですが、その時 space/x で次候補/前候補を表示させると skk-kana-start-point が壊れて
+		    仮名を確定しても kana-prefix が消去されないバグが存在しましたので修正しました。</li>
+		    <li>[tsf, ime] 数値変換のオンオフは設定できるものの、設定を実際にレジストリから読むコードが書かれていなかったので用意しました。(Takuya Yamabeさん、バグレポートありがとうございました)</li>
+		    <li>[ime] Windows2000 で toolbar に status window をしまった時に indicator window に notify を投げるかどうかを現在の foreground window の process id が current process id であるかどうかを見て判断するように変更しました。</li>
+		    </ul>
+		    </li>
+		    <li><a id="changelog-skkime1.5-2008/01/30">SNAPSHOT 2008/01/30</a>
+		    <ul>
+		    <li>[skimconf] 色変換の設定を REG_DWORD と REG_BINARY を混在して利用していたため、書いた結果が読めないため初期化されるというバグが存在しました。(Hisato Eguchiさん、バグレポートありがとうございました)</li>
+		    <li>[ime] 候補表示窓のサイズ計算で、テキストが全く存在しない場合でも候補の最初の要素を見てしまい、その結果 lpIMC の何処かを破壊するというバグが存在しました。</li>
+		    <li>[tsf] 入力途中の色設定が反映されないバグを修正しました。</li>
+		    <li>[tsf] Shift や Control の押下状態の判定に GetAsyncKeyState ではなく GetKeyState を利用するように直しました。GetAsyncKeyState の場合、実際にキーが処理されるのが
+		    遅れた場合、「既に Shift から指が離されている」ため「▽モードに入れない」などの問題が発生していました。</li>
+		    <li>[tsf] GetAsyncKeyState の時代に返り値が 0 かどうかで判定していたために、下位1ビットの状態に左右されてしまい、押されていない Shift や Control が押されている扱いに
+		    なるバグが存在しました。GetKeyState に修正する際に最上位ビットのみを見るように修正しています。(このバグは Control と a を交互に叩くと再現できました)</li>
+		    <li>[ime, tsf] JISX0201-KATAKANA 変換で誤変換される(例.「テ」が「デ」になる)バグを修正しました。(john mycleさん、バグレポートありがとうございました)</li>
+		    </ul>
+		    </li>
+		    <li><a id="changelog-skkime1.5-2008/01/08">SNAPSHOT 2008/01/08</a>
+		    <ul>
+		    <li>[skkiserv] skkiserv.exe のソート済み辞書の処理が okuri-ari entries に記号が存在することを考えていない作りだったので修正しました。これがバグの原因の全てかどうかは調査中です。</li>
+		    <li>[skimconf] ローマ字仮名ルールにマクロが設定できないバグを修正しました。</li>
+		    <li>[ime, tsf] 数字を含む文字列を検索する際に「数値変換」と「そのままの文字列の変換」を同時に行うようにしました。</li>
+		    <li>[ime, tsf, skimconf] ローマ字仮名ルールに特殊記号(任意の1文字\?、母音\V、子音\C)を追加しました(今迄のルールは一度標準に戻してリセットする必要があります)。
+		    また出力側にはその時に入力された文字を意味する特殊記号(\I)を追加しました。優先順位は「普通の記号」＞「母音」「子音」＞「任意の1文字」です。
+		    これにより、例えば、現状態``r\?''から次状態``\I''、出力文字列を``ー'' とすると、``rk'' と入力した場合現状態 ``k''、出力 ``ー''のようになります。</li>
+		    <li>[ime, tsf, skimconf] ローマ字仮名ルール木を複数(4つ)用意して、その切り替え動作で oh変換のルールを吸収させました。どの木にいるかによって、o を押された直後の prefix 空なのか、そうでないのかを区別しています。</li>
+		    <li>[ime, tsf] Jisx0201-Katakana/Roman モードを追加しました。これに伴い skk-toggle-jisx0201, skk-toggle-katakana が追加されています。</li>
+		    <li>[ime] Windows2000 で IME メニューが化けているバグを修正しました。</li>
+		    <li>[ime] Windows2000 でレジストリからの設定読み込み中にエラーが発生して、設定が反映されないバグを修正しました。</li>
+		    <li>[ime, tsf] UISTATE ないし言語バーから入力モードを切り替える操作が正しく動いていないバグを修正しました。</li>
+		    <li>[installer] WindowsVista 64bit edition の installer package を作成しました。</li>
+		    </ul>
+		    </li>
+		    <li><a id="changelog-skkime1.5-2007/11/19">SNAPSHOT 2007/11/19</a>
+		    <ul>
+		    <li>[ime,tsf] katakana-region, hiragana-region で region をまず削除してから insert で結果を入れていたことで、henkan-end-point が henkan-start-point と重なってしまうバグが存在していましたので、修正しました。</li>
+		    <li>[ime,tsf] skimconf.exe では RomaKanaRuleType と記述していたにもかかわらず、設定を読む側が RomaKanaRule-Type と記述していたバグを修正しました。これによりローマ時かなの変換ルールが修正できない現象が発生していました。</li>
+		    <li>[skkiserv] skkiserv.exe に正規表現ライブラリを追加しました。skk-today を動作させるための処置です。</li>
+		    <li>[skkiserv] vista は top-level window で visible かつ focus を持たない application からは logoff の cancel や block をさせない作りになっているようです。このために logoff 時にセーブしようとする途中で強制的に skkiserv.exe が落とされていました。
+		    WM_QUERYENDSESSION で shutdown の cancel を create して、WM_ENDSESSION で30秒の余裕を貰うという方法で対応しています。</li>
+		    <li>[skkiserv] princ で落ちるバグを修正しました。</li>
+		    <li>[tsf] 直前に Shift した文字が「お」であるかどうかを判定するコードが仮名プレフィクスがなくなると clear を呼び出すことで動作していませんでした。通常の OnClearSession では直前の Shift したテキスト情報は消去せず
+		    Contextが存在するのに Clear された時にのみクリアするようにしています。(これでも条件がまだ甘いかもしれませんが)</li>
+		    <li>[skimconf] サーバー辞書を一度追加した後、編集しようとすると free した領域を操作しようとするバグが存在していました。</li>
+		    <li>[installer] WiX を利用して Vista 用の installer を作成しました。</li>
+		    <li>[ime,tsf] #4 変換で候補を再度検索した時に候補一覧のポインタを破壊してしまうバグが存在しました。このため、#4変換が入ると候補数が以上に少なくなる現象が観測されました。</li>
+		    <li>[ime,tsf] #4 変換の結果を #4 と表示するのを変換結果がきちんと表示されるように修正しました。</li>
+		    <li>[skkiserv,skimconf] msvcr を static link するように変更しました。</li>
+		    <li>[skimconf] ローマ時かなルールの type1 (平仮名,片仮名) を追加した時に左側のリストボックスに表示される内容の「平仮名」と「片仮名」が入れ替わっているバグを修正しました。</li>
+		    </ul>
+		    </li>
+		    <li><a id="changelog-skkime1.5-2007/08/22">SNAPSHOT 2007/08/22</a>
+		    <ul>
+		    <li>Default の候補窓の表示位置を調整するコードが候補の有無に関係なく CANDIDATEINFO を触れていたバグを修正しました。</li>
+		    <li>[ime,tsf] Minibuffer Window を開く・閉じるを繰り返すと、キーを処理するかどうかを判定するコードのバグによりアプリケーションが落ちるバグを修正しました。</li>
+		    <li>[ime,tsf] 直接コード入力の2段目のメニューで選択した候補が入力されない、ずれてしまうバグを修正しました。</li>
+		    <li>[ime,tsf] ImeBuffer の初期化時に PrefixLen を初期化していなかったために、Context を保存する際に間違った量をコピーするバグを修正しました。</li>
+		    <li>[ime,tsf] ImeDoc_bDeleteBuffer は呼ばれるものの、UnusedBuffer を解放するコードが呼ばれないために、ImeDoc_bDeleteBuffer が何時かアクセス違反を発生させて落ちるバグを修正しました。</li>
+		    <li>[ime] ImeDoc_vDestroy が HeapAlloc で確保した領域に free を実行しているバグを修正しました。</li>
+		    </ul>
+		    </li>
+		    <li><a id= "changelog-skkime1.5-2007/07/28">SKKIME1.5 SNAPSHOT2007/07/28</a>
+		    <ul>
+		    <li>Default の候補窓の表示位置を調整しました。</li>
+		    <li>候補一覧表示状態から x で抜けた時に現在の候補が Composition String に入らないバグを修正しました。</li>
+		    <li>特殊キーのキー割り当てが行えるようにしました(Left Arrow, Right Arrow など)。この影響で keymap が以前と互換性がなくなっています。Custom にしていた場合は一度標準に戻してから再度設定し直して下さい。</li>
+		    <li>HasSu (はっ*す) のような変換に失敗するバグを修正しました。</li>
+		    <li>言語バーのボタンの CLSID が正しくない ID だったので修正しました。</li>
+		    <li>[tsf] Microsoft Word で Font Style を忘れる現象を緩和する(予定)のコードを追加しました。(Mitsuru Oka さん、バグレポートありがとうございます)</li>
+		    <li>[tsf] IME を閉じた時に編集中のテキストが残るバグを修正しました。</li>
+		    <li>[tsf] ToolTip の表示位置が瞬間ずれるバグを修正しました。(これは 1.0 と同じバグです)</li>
+		    </ul>
+		    </li>
+			<li>
+				<a id="changelog-skkime1.5-2007/06/20">SKKIME1.5 SNAPSHOT2007/06/20</a>
+				 (<a href="arc/skkime/skkime1.5-win2k-bin-snap20070620.tar.gz">Windows2000 
+					バイナリ</a> / <a href="arc/skkime/skkime1.5-winxp-bin-snap20070620.tar.gz">WindowsXP 
+					バイナリ</a> / <a href="arc/skkime/skkime1.5-win2kxp-snap20070620.tar.gz">ソース</a>)
+		    <ul>
+    		<li> ImmSetCompositionWindow が呼ばれた時に CandidateWindow を強制的に移動させるコードが存在したのですが、その中で CANDFORM を変更するという
+    		無理を行っていたがために Opera など一部のアプリケーションで Window を移動させると候補窓がおかしな位置になるというバグを引き起こしてい
+    		ました。CANDFORM は変更せず、ImmSetCandidateWindow が全く呼ばれない場合のみ Composition Window の位置にあわせて候補表示窓を移動させるよう
+    		にしました。</li>
+    		<li> CANDFORM が CS_POS の場合には、GetWindowInfo の rcWindow 相対で、CS_RECT の場合には ClientToScreen (rcClient相対)で、座標を
+    		解決するようにしました。これで Opera や jmeter で候補一覧表示窓がおかしな場所に出ることはなくなった筈です…。
+    		(yaskeさん、バグレポートありがとうございます)</li>
+    		<li> ImeSelect が FALSE の時に言語バーに触れると、異常に操作に時間がかかるようです。ImeSelect の中では言語バーを操作しないようにコードを書き換えました。</li>
+    		<li> Internet Explorer7 (Vista) は Protect Mode で動作しているため、skkiserv.exe と通信する local pipe が Low Integrity Mode で connection を張れるように security descriptor を変更する必要があり
+    		ました。ただ、IE7 から skkiserv.exe を起動させるようなことになってしまうと、未署名の skkiserv.exe を起動してもかまわないですか？とダイアログが出てしまいます。こちらは…どう対応したものか悩んで
+    		います。ちなみに、MS-IME のユーザ辞書が2つ存在するのも、Low Integrity Mode のためです。Low Integrity Modeで触れられる場所のユーザ辞書とそれ以外の辞書に分かれているようです。</li>
+		    </ul>
+		    <p> <a href="arc/skkime/skkime1.5-winvista-bin-snap20070620.tar.gz">Vista 用に build したバイナリ</a>…状況は 1.0 の時と同様です。Windows フォルダ以下の
+		    IME\SKKIM15 になる点、レジストリキーが 1.5 になる点が異なります。</p>
+		    </li>
+		    <li>
+				<a id="changelog-skkime1.5-2007/04/09">SKKIME1.5 SNAPSHOT2007/04/09</a>
+				 (<a href="arc/skkime/skkime1.5-winxp-bin-snap20070409.tar.gz">WindowsXP バイナリ</a> /
+				 <a href="arc/skkime/skkime1.5-win2kxp-snap20070409.tar.gz">ソース</a>)
+		    <ul>
+		    <li>[TSF] skkimmgr が _Uninit 時に _CloseUIElements を呼び出さなかったために、LayoutChange Notify が Unadvise されず、結果として Layout 状態が呼び出されなくなるバグが存在しました。
+		    IE などで候補 Window を表示した状態で IE を落とすことを繰り返すと発生します。_CloseUIElements を追加することで修正できたと思います。</li>
+		    </ul></li>
+			<li>
+				<a id="changelog-skkime1.5-2007/04/07">SKKIME1.5 SNAPSHOT2007/04/07</a>
+				 <a href="arc/skkime/skkime1.5-winxp-bin-snap20070407.tar.gz"> WindowsXPバイナリ</a>
+		    <ul>
+		    <li>取り敢えず WindowsXP のバイナリだけ用意しました。</li>
+		    </ul></li>
+		    </ul>		
+		
+		<p><b>[<a id="TSF">Text Service Framework に追加する方法</a>]</b></p>
+		<p>
+			inf を利用して install を行うと、WINDOWS directory 以下 IME/SKKIM10 の下に skimic.dll 
+			がコピーされていると思います。</p>
+		<pre>    cd %windir%\IME\SKKIM10
+    regsvr32 skimic.dll
+</pre>
+		<p>
+			と行うことで install ができます。</p>
+		<p>
+			が、一度 install してしまうと削除が困難なので注意して下さい。uninstall するためにはレジストリを編集する必要があります。</p>
+		<p>
+			レジストリエディタを利用して、</p>
+		<pre>   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\TIP\{830DE831-E04D-40BB-8683-1E179A5F1A4F}
+</pre>
+		<p>
+			のキー以下を削除して下さい。これで Text Service Framework 版と IME との連携が切断されます。</p>
+		<p>
+			もしくは、</p>
+		<pre>   regsvr32 /u skimic.dll
+</pre>
+		<p>
+			を実行します。</p>
+		<p>Text Service Framework と統合する利点は次の通りです。</p>
+		<ul>
+			<li>
+			Internet Explorer の security の設定 tab を動かして、適用 or OK を押した後の反応が軽い。</li>
+			<li>
+				言語バーの表示順序が正しくなる。(本来はヘルプの左側に入力モードなどのアイコンが出ないといけない)
+			</li>
+		</ul>
+		<p>
+			Text Service Framework 版はまだ作成中かつテスト中です。<s>具体的に次の機能が欠落しています。</s></p>
+		<ul>
+			<li>
+				<s>LISP 変換、日付入力 </s></li>
+			<li>
+				<s>言語バーメニューからの操作 </s></li>
+			<li>
+				<s>Reconversion (= ITfReconversion を実装すること) </s></li>
+			<li>
+				テスト<s>(一通りの動作を確認して、メールを数通書いてみて試した、までです)</s>
+			</li>
+		</ul>
+		<p><b>動作確認を行ったアプリケーション</b></p>
+		<ul>
+			<li>
+			OfficeXP personal (一通りだけ、となりますが)</li>
+			<li>
+			Outlook Express 6.0sp1</li>
+			<li>
+				Internet Explorer 6.0sp1
+			</li>
+		</ul>
+		<p><b>Undocumented な情報</b></p>
+		<p>
+			きちんとまとめないといけないと思いつつも、何処にも記載されてない機能を(しかも分かりにくい)書きます。</p>
+		<ul>
+			<li>
+			辞書設定ダイアログのリストボックスには順序があります。上から順番に辞書は検索され、変換結果もその順番に出ます。辞書の検索順序を入れ替えるには、リストの要素を 
+			Drag &amp; Drop して移動させて下さい。</li>
+			<li>
+			かなモードから Control-q で JISX0201-1976-KATAKANA 
+			入力モード(いわゆる半角カナ入力モード)へと切り替わります(トグル動作)。</li>
+			<li>
+				まる数字は、一応直接コード入力から入れることが可能です。</li>
+		</ul>
+		<p><b>ソースコードから実行形式を作るにあたって</b></p>
+		<p>
+			WINDDK を入手します。ただ、Microsoft から download できなくなっているのか、order するか MSDN Subscriber 
+			になる必要があるみたいです。手元では Windows DDK 2600.1106 を利用しています。</p>
+		<p>
+			Windows DDK のインストール自体は installer 
+			が走りますし、出てくるメッセージに従って[Next]を選択していれば完了します。(インストールするファイルを選択したり、インストール先を設定したりしなければなりませんが。)</p>
+		<p>
+			首尾よくインストールが完了すれば、Start Menu に Development Kits が追加されている筈です。 Start - Program - 
+			Development Kits - Windows DDK 2600.1106 - Build Environments - で Windows2000 
+			Checked Build Environments か WindowsXP 32bit Checed Build Environments を選択します。</p>
+		<p>
+			先にダウンロードしていたソースアーカイブを適当なディレクトリで展開しておきます。例えば、<tt> C:\tmp </tt>でしょうか。</p>
+		<hr />
+		<a id="skkimeWinNT4">
+			<h2 class="subbg">&nbsp;[SKKIME for WindowsNT4.0]&nbsp;</h2>
+		</a>
+		<p><b>開発の状況</b></p>
+		<p>
+			完全に停止しています。取り敢えず code をサルベージできたので、実行環境は VirtualPC に入れて開発する予定です。</p>
+		<hr />
+		<a id="link">
+			<h2 class="bg">&nbsp;[リンク]&nbsp;</h2>
+		</a>
+		<p>
+			skkime について紹介、インストールの説明等々して下さっているページへのリンクです。</p>
+		<ul>
+			<li>
+				吉田智彦さんの <a href="http://www.sdri.co.jp/skkime/">skkime のインストールページ</a></li>
+		</ul>
+		<hr />
+		<p>
+			Takashi SAKAMOTO (PXG01715@nifty.ne.jp)
+		</p>
+</div>
+</body>
+</html>
+
